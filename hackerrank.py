@@ -283,16 +283,19 @@ for i in range(l):
 for i in range(len(d)):
     for j in range(len(d[i])):
         if d[i].count(d[i][j])>1:
-            d[i]=d[i].replace(d[i][j],'-',1)
+            if d[i]==d[i][::-1]:
+                d[i]=d[i].replace(d[i][j][::-1],'-',1)
+            else:
+                d[i]=d[i].replace(d[i][j],'-',1)
 
 
-for i in range(len(d)):
-    if '-' in d[i]:
-       d[i]=d[i].replace('-','')
+
+print(d)
+# for i in range(len(d)):
+#     if '-' in d[i]:
+#        d[i]=d[i].replace('-','')
      
 
 for i in d:
     print(i)
 
-# Removing char at pos 3
-# using replace
