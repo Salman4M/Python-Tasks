@@ -394,12 +394,40 @@
 #         except ValueError:
 #             return False
 
-from fractions import Fraction
-from functools import reduce
 
-from math import gcd,lcm
-# print(gcd(2,4,6))
-# print(lcm(2,4,6))
-print(reduce(lambda x, y : x + y,[1,2,3]))
 
-# print(reduce(gcd, [2,4,8], 3))
+####################################################Reduce Function
+
+# from fractions import Fraction
+# from functools import reduce
+
+# from math import gcd,lcm
+# # print(gcd(2,4,8))
+# # print(lcm(2,4,6))
+# # print(reduce(lambda x, y : x + y,[1,2,3]))
+
+# print(reduce(gcd, [2,4,8],3))  #gcd(3, 2) returns 1 since the greatest common divisor of 3 and 2 is 1.
+                               #Next, gcd(1, 4) returns 1 since the greatest common divisor of 1 and 4 is also 1.
+                               #Finally, gcd(1, 8) returns 1 since the greatest common divisor of 1 and 8 is 1.
+
+# print(reduce(lambda x, y : x + y, [4,8,12], -3))
+
+
+
+# print(Fraction(1,2))
+
+##solved here
+# def product(fracs):
+#     t = reduce(lambda x, y : x * y, fracs)
+#     return t.numerator, t.denominator
+
+
+# fracs = []
+# for _ in range(int(input())):
+#     fracs.append(Fraction(*map(int, input().split())))
+# result = product(fracs)
+# print(*result)
+
+
+
+
