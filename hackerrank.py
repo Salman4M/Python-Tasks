@@ -430,4 +430,30 @@
 
 
 
+#######################################################Floor, Ceil and Rint
+
+
+# import numpy
+
+# my_array = numpy.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8, 9.9])
+# # print(numpy.floor(my_array))           #[ 1.  2.  3.  4.  5.  6.  7.  8.  9.]                    # smaller integer
+# my_array = numpy.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8, 9.9])
+# # print(numpy.ceil(my_array) )         #[  2.   3.   4.   5.   6.   7.   8.   9.  10.]             # bigger integer
+
+# my_array = numpy.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8, 9.9])              
+# # print(numpy.rint(my_array))          #[  1.   2.   3.   4.   6.   7.   8.   9.  10.]         nearest integer to float (in .5 it belong to bigger integer) 
+
+# numpy.set_printoptions(legacy='1.13')
+
+# # print(numpy.rint(my_array))          #[  1.   2.   3.   4.   6.   7.   8.   9.  10.]         nearest integer to float (in .5 it belong to bigger integer) 
+
+# newarr= list(map(float,input().split()))
+
+# newarr= numpy.asarray(newarr)
+# print(numpy.floor(newarr))
+# print(numpy.ceil(newarr))
+# print(numpy.rint(newarr))
+
+# print(numpy.floor(newarray))
+
 
