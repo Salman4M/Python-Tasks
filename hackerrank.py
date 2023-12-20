@@ -327,27 +327,79 @@
 
 ##############################################################################Validating Email Addresses With a Filter
 
-
-l = list(range(10))
-l = list(map(lambda x:x*x, l))
-l = list(filter(lambda x: x > 10 and x < 80, l))
+# a=["@something.com","lar!a@hackerrank.com","brian-23@hackerank.com", "britts_54@hackerrank.com"]
 
 
-print(l)
-a=["lara@hackerrank.com","brian-23@hackerrank.com", "britts_54@hackerrank.com"]
+# import string
+# numbs = list(range(10))
+# alp = list(string.ascii_letters)
+# total = numbs+alp+["_",'-']
 
-# print(a[0][:5])
-# # if a[0][:4].isdigit():
-# #     print(True)
+# correct=[]
 
-for i in range(len(a)):
-    for ind1,val1 in enumerate(a[i]):
-        if "@"==val1:
-            if '-'or '_' in a[i][:ind1]:
-                if a[i][:ind1].isalnum():
-                    print(a[i][:ind1])
+# for i in range(len(a)):
+#     if '@' in a[i] and '.' in a[i]:
+#         at= a[i].index('@')
+#         b = a[i].index('.')
+#         if at!=0:
+#             if len(a[i][b+1:len(a[i])])<=3 and a[i][b+1:len(a[i])].isalpha():
+#                         if a[i][at+1:b].isalnum():
+#                             correct.append(a[i])
 
-        elif '.'==val1:
-            if a[i][:ind1].isalnum():
-                    print(a[i][:ind1])
 
+# notd=[]
+
+# for z in range(len(correct)):
+#     at= correct[z].index('@')
+
+#     for j in range(len(correct[z][:at])):
+#           if not correct[z][j] in str(total): 
+#                 notd.append(correct[z])
+
+
+# for i in correct:
+#     if i in notd:
+#         correct.remove(i)
+
+# print(correct)
+
+
+
+####### same code but optimized by chatgpt 
+
+# def fun(s):
+#         if '@' not in s or '.' not in s:
+#             return False
+        
+#         try:
+#             at_index = s.index('@')
+#             dot_index = s.index('.')
+        
+#             if at_index == 0:
+#                 return False
+            
+#             # Check username
+#             if not all(c in string.ascii_letters + string.digits + '-' + '_' for c in s[:at_index]):
+#                 return False
+            
+#             # Check website name
+#             if not all(c in string.ascii_letters + string.digits for c in s[at_index + 1:dot_index]):
+#                 return False
+            
+#             # Check extension
+#             if not s[dot_index + 1:].isalpha() or len(s[dot_index + 1:]) > 3:
+#                 return False
+            
+#             return True
+#         except ValueError:
+#             return False
+
+from fractions import Fraction
+from functools import reduce
+
+from math import gcd,lcm
+# print(gcd(2,4,6))
+# print(lcm(2,4,6))
+print(reduce(lambda x, y : x + y,[1,2,3]))
+
+# print(reduce(gcd, [2,4,8], 3))
