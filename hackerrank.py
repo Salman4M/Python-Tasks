@@ -602,3 +602,25 @@ import numpy
 
 
 #PYTHON GOLD BADGE HAS EARNED
+
+
+
+
+################################################################################PROBLEM SOLVING##################################################################################
+
+####################################################Diagonal Difference
+
+# n=int(input())
+# arr=[]
+# for i in range(n):
+#     arr.append(list(map(int,input().split())))
+
+# print(arr)
+
+# def diagonalDifference(arr):
+#     a=0
+#     b=0
+#     for i in range(len(arr)):
+#         a+=arr[i][i]
+#         b+=arr[i][abs(len(arr)-1-i)] 
+#     return abs(a-b) 
