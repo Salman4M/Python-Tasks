@@ -457,3 +457,148 @@
 # print(numpy.floor(newarray))
 
 
+################################################################Sum and Prod
+# print(' ')
+
+import numpy
+
+# my_array = numpy.array([ [1, 2], [3, 4] ])
+
+# print (numpy.sum(my_array, axis = 0)  )       #Output : [4 6]
+# print (numpy.sum(my_array, axis = 1) )        #Output : [3 7]
+# print (numpy.sum(my_array, axis = None)  )    #Output : 10
+# print (numpy.sum(my_array))                   #Output : 10
+
+
+
+# print (numpy.prod(my_array, axis = 0)  )       #Output : [3 8]
+# print (numpy.prod(my_array, axis = 1) )        #Output : [ 2 12]
+# print (numpy.prod(my_array, axis = None)  )    #Output : 24
+# print (numpy.prod(my_array))                   #Output : 24
+
+##### here
+# d=[]
+# rows,columns=list(map(int,input().split()))
+# for i in range(rows):
+#     d.append(list(map(int,input().split())))
+
+# a=numpy.sum(d,axis=0)
+# print(a)
+# print(numpy.prod(a))
+
+
+
+
+#####################################################################Min and Max
+# my_array = numpy.array([[2, 5], 
+#                         [3, 7],
+#                         [1, 3],
+#                         [4, 0]])
+
+# print (numpy.min(my_array, axis = 0))         #Output : [1 0]
+# print (numpy.min(my_array, axis = 1))         #Output : [2 3 1 0]
+# print (numpy.min(my_array, axis = None))      #Output : 0
+# print (numpy.min(my_array))                   #Output : 0
+
+#### solved
+# d=[]
+# rows,columns=list(map(int,input().split()))
+# for i in range(rows):
+#     d.append(list(map(int,input().split())))
+
+# a=numpy.min(d,axis=1)
+# # print(a)
+# print(numpy.max(a))
+
+
+#######################################################################Mean, Var, and Std
+
+
+# my_array = numpy.array([ [1, 2], [3, 4] ])
+
+# print (numpy.mean(my_array, axis = 0))        #Output : [ 2.  3.]
+# print (numpy.mean(my_array, axis = 1))        #Output : [ 1.5  3.5]
+# print (numpy.mean(my_array, axis = None))     #Output : 2.5
+# print (numpy.mean(my_array))                  #Output : 2.5
+
+# print (numpy.var(my_array, axis = 0))         #Output : [ 1.  1.]
+# print (numpy.var(my_array, axis = 1))         #Output : [ 0.25  0.25]
+# print (numpy.var(my_array, axis = None))      #Output : 1.25
+# print (numpy.var(my_array))                   #Output : 1.25
+
+# print (numpy.std(my_array, axis = 0))         #Output : [ 1.  1.]
+# print (numpy.std(my_array, axis = 1))         #Output : [ 0.5  0.5]
+# print (numpy.std(my_array, axis = None))      #Output : 1.11803398875
+# print (numpy.std(my_array))                   #Output : 1.11803398875
+
+
+# d=[]
+# rows,columns=list(map(int,input().split()))
+# for i in range(rows):
+#     d.append(list(map(int,input().split())))
+
+# print(numpy.mean(d,axis=1))
+# print(numpy.var(d,axis=0))
+# print(round(numpy.std(d),11))
+
+
+
+
+###################################################################################Dot and Cross
+
+
+import numpy
+
+# A = numpy.array([ 1, 2 ])
+# B = numpy.array([ 3, 4 ])
+
+# print (numpy.dot(A, B))       #Output : 11
+
+# print (numpy.cross(A, B))     #Output : -2
+
+
+# n=int(input())
+# a=[]
+# b=[]
+# for i in range(n):
+#     a.append(list(map(int,input().split())))
+
+# for i in range(n):
+#     b.append(list(map(int,input().split())))
+
+# print(numpy.dot(a,b))
+
+
+
+##################################################################################Inner and Outer
+
+
+# A = numpy.array([0, 1])
+# B = numpy.array([3, 4])
+
+# print (numpy.inner(A, B))     #Output : 4
+# print (numpy.outer(A, B))     #Output : [[0 0]
+                            #          [3 4]]
+
+
+# inner=[]
+# outer=[]
+
+# for i in range(1):
+#     inner.append(list(map(int,input().split())))
+
+# for i in range(1):
+#     outer.append(list(map(int,input().split())))
+
+
+# # print(inner)
+# # print(outer)
+# a=numpy.inner(inner,outer)
+# print(a[0][0])
+# print(numpy.outer(inner,outer))
+# # 
+
+
+
+
+#PYTHON GOLD BADGE HAS EARNED
