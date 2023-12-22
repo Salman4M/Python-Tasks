@@ -689,8 +689,30 @@ import numpy
 # print(b)
 
 
+#######################################################################Insertion Sort Advanced Analysis (Advanced)
 
 
-#######################################################################Insertion Sort Advanced Analysis
 
 
+# arr=[1,1,1,2,2]
+# # arr=[2,1,3,1,2]
+# arr=[4,3,2,1]
+
+b=0
+t = int(input("queries: ").strip())
+
+
+for t_itr in range(t):
+        n = int(input("len arr: ").strip())
+        arr = list(map(int, input().rstrip().split()))
+
+        for i in range(1,n):
+            arr[i]
+            for j in arr[:i]:
+                if arr[i]<j:
+                    b+=1
+
+        print(b)
+
+
+#####time limit exceeded error
