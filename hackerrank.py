@@ -624,3 +624,26 @@ import numpy
 #         a+=arr[i][i]
 #         b+=arr[i][abs(len(arr)-1-i)] 
 #     return abs(a-b) 
+
+# a=' '
+# b='#'
+# n=6
+# for i in range(1,n+1):
+
+#     print(a*(n-i)+b*i)
+# b=[]
+
+# arr=[1,2,3,4,5]
+# c=[]
+# total=[]
+# for j in range(len(arr)):
+#     for i in range(len(arr)):
+#             c.append(arr[i])
+#             if len(c)==4:            
+#                 total.append(sum(c))
+#                 c=[]
+
+# print(min(total),max(total))
+
+
+
