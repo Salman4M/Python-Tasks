@@ -646,4 +646,45 @@ import numpy
 # print(min(total),max(total))
 
 
+# arr=[3,2,1,3]
+# a=max(arr)
+
+
+# print(arr.count(a))
+
+#######################################################################Time Conversion
+
+# hour=range(1,25)
+
+# s = '12:05:45AM'
+
+# b=['PM','AM']
+# for i in b:
+#     if i in s:
+#         s= s.replace(i,'')
+#         s=s.split(':')
+#         if i=='AM'and int(s[0])!=12:
+#              j=True
+#         elif i=='AM'and int(s[0])==12:
+#                 s[0]='00'
+
+#         elif i=='PM'and int(s[0])!=12:
+
+#             if int(s[0]) in hour and int(s[0])!=12: 
+#                     s[0]= int(s[0])+12
+#                     # print(s[0])
+#             elif int(s[0]) ==12:
+#                 s[0]='00'
+
+
+# for i in range(len(s)):
+#     if type(s[i])==int:
+#         s[i]=str(s[i])
+# for i in range(2):
+#     s[i]=s[i]+':'
+
+# b=''
+# for i in s:
+#     b+=i
+# print(b)
 
