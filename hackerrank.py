@@ -688,3 +688,9 @@ import numpy
 #     b+=i
 # print(b)
 
+
+
+
+#######################################################################Insertion Sort Advanced Analysis
+
+
