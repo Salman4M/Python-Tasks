@@ -1867,8 +1867,8 @@
 # Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 
 # matrix = [[1,2,3],[4,5,6],[7,8,9]]
-c = []
-b = []
+# c = []
+# b = []
 
 
 # matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
@@ -3620,12 +3620,55 @@ nums = [12,9]
 #         n = 1
 
 
-# print(m)
-
-# z=0
-# stones = [5,1,2,4,3]
-# for i in stones:
-    
+#####################################################################1991. Find the Middle Index in Array (Easy)
 
 
+# class Solution:
+#     def findMiddleIndex(self, nums):
+#             for i in range(0,len(nums)):
+#                 if sum(nums[:i])==sum(nums[i+1:]):
+#                     return i            
+#             else:
+#                 return -1
+        
 
+####################
+
+
+
+# a=''
+# digits = [4,3,2,1]
+# for i in digits:
+#     a+=str(i)
+
+# b=int(a)+1
+# tot=[]
+
+# print(b)
+
+# for i in str(b):
+#     tot.append(int(i))
+# print(tot)
+
+
+##########################################33#####498. Diagonal Traverse
+from collections import defaultdict
+
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
+
+
+d= defaultdict(list)
+for i in range(len(matrix)):
+    for j in range(len(matrix[i])):
+        d[i+j].append(matrix[i][j])
+
+
+res=[]
+
+for key,val in d.items():
+    if key%2==0:
+        res.extend(d[key][::-1])
+    else:
+        res.extend(d[key])
+
+print(res)

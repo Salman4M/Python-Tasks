@@ -693,7 +693,6 @@ import numpy
 
 
 
-
 # arr=[1,1,1,2,2]
 # # arr=[2,1,3,1,2]
 # arr=[4,3,2,1]
@@ -727,6 +726,8 @@ import numpy
 # Merges two subarrays of arr[].
 # First subarray is arr[l..m]
 # Second subarray is arr[m+1..r]
+
+
 
 
 
@@ -777,6 +778,7 @@ import numpy
 # # sub-array of arr to be sorted
 
 
+
 # def mergeSort(arr, l, r):
 # 	if l < r:
 
@@ -790,6 +792,7 @@ import numpy
 # 		merge(arr, l, m, r)
 
 
+
 # # Driver code to test above
 # arr = [12, 11, 13, 5, 6, 7]
 # n = len(arr)
@@ -797,11 +800,16 @@ import numpy
 # for i in range(n):
 # 	print(arr[i],end=" ")
 
+
+
 # mergeSort(arr, 0, n-1)
 # print("\n\nSorted array is")
 # for i in range(n):
 # 	print( arr[i],end=" ")
 
 
-
 # This code is contributed by Mohit Kumra
+
+
+
+
