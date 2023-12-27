@@ -1,3 +1,4 @@
+######################################################first task
 
 # sentence=input()
 
@@ -25,7 +26,7 @@
 # for i in c:
 #     print(i,end=' ')
 
-
+###################################################3
 # modified_sentence = ''
 # for char in sentence:
 #     if char.islower():
@@ -45,20 +46,20 @@
 #####################################################
 
 
-# def upper_lower_reverse_order(sentence):
-#     modified_sentence = ''
-#     for char in sentence:
-#         if char.islower():
-#             modified_sentence += char.upper()
-#         elif char.isupper():
-#             modified_sentence += char.lower()
-#         else:
-#             modified_sentence += char  
-#     words = modified_sentence.split()
-#     reversed_sentence = ' '.join(reversed(words))
-#     return reversed_sentence
+def upper_lower_reverse_order(sentence):
+    modified_sentence = ''
+    for char in sentence:
+        if char.islower():
+            modified_sentence += char.upper()
+        elif char.isupper():
+            modified_sentence += char.lower()
+        else:
+            modified_sentence += char  
+    words = modified_sentence.split()
+    reversed_sentence = ' '.join(reversed(words))
+    return reversed_sentence
 
-# sentence = input()
+sentence = input()
 
 
 # print(upper_lower_reverse_order(sentence))
@@ -66,45 +67,45 @@
 
 
 
-######################################################second
+######################################################second task
 
 
 
-# class VendingMachine:
-#     def __init__(self,num_items,item_price):
-#         self.num_items=num_items
-#         self.item_price=item_price
+class VendingMachine:
+    def __init__(self,num_items,item_price):
+        self.num_items=num_items
+        self.item_price=item_price
 
-#     def buy(self,req_items,money):
-#         if self.num_items < req_items:
-#             raise ValueError("Not enough items in the machine")
+    def buy(self,req_items,money):
+        if self.num_items < req_items:
+            raise ValueError("Not enough items in the machine")
 
-#         elif money < req_items * self.item_price:
-#             raise ValueError("Not enough coins")
+        elif money < req_items * self.item_price:
+            raise ValueError("Not enough coins")
 
-#         self.num_items -= req_items
-#         return money - (req_items * self.item_price)
+        self.num_items -= req_items
+        return money - (req_items * self.item_price)
 
-# num_items, item_price = map(int, input().split())
-
-
-# vending_machine = VendingMachine(num_items, item_price)
+num_items, item_price = map(int, input().split())
 
 
-
-# n = int(input())
-
-# for _ in range(n):
-#     req_items, money = map(int, input().split())
-#     try:
-#         change = vending_machine.buy(req_items, money)
-#         print(change)
-#     except ValueError as z:
-#         print(z)
+vending_machine = VendingMachine(num_items, item_price)
 
 
 
-####
+n = int(input())
+
+for _ in range(n):
+    req_items, money = map(int, input().split())
+    try:
+        change = vending_machine.buy(req_items, money)
+        print(change)
+    except ValueError as z:
+        print(z)
+
+
+
+############################################3
 # num_items,item_price=input().split()
 # num_items,item_price=int(num_items),int(item_price)
 # n=int(input())
