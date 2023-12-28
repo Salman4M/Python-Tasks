@@ -26,7 +26,7 @@
 # for i in c:
 #     print(i,end=' ')
 
-###################################################3
+###################################################
 # modified_sentence = ''
 # for char in sentence:
 #     if char.islower():
@@ -105,7 +105,7 @@ for _ in range(n):
 
 
 
-############################################3
+############################################
 # num_items,item_price=input().split()
 # num_items,item_price=int(num_items),int(item_price)
 # n=int(input())
