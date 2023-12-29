@@ -232,8 +232,8 @@ by storing the results of expensive function calls to pure functions and returni
 # in this problem We have to make target word from given words in wordBank
 
 
-target = "abcdef"
-wordBank = ["ab","abc","cd","def","abcd"]
+# target = "abcdef"
+# wordBank = ["ab","abc","cd","def","abcd"]
 
 
 # for i in wordBank:
@@ -290,31 +290,128 @@ wordBank = ["ab","abc","cd","def","abcd"]
 
 
 
+################################Now  we count how many possibly ways to get target word
 
-def countConstruct(target,wordBank):
-   n=0
-   if target=='':
-      return True
+# def countConstruct(target,wordBank):
+#    n=0
+#    if target=='':
+#       return True
 
-   for i in wordBank:
-        if target.startswith(i):
-            newword=target.replace(i,'')
-            if countConstruct(newword,wordBank)==True:
-                n=n+1
+#    for i in wordBank:
+#         if target.startswith(i):
+#             newword=target.replace(i,'')
+#             if countConstruct(newword,wordBank)==True:
+#                 n=n+1
                 
-   if n==0:
-       return 0
-   else:
-       return n
+#    if n==0:
+#        return 0
+#    else:
+#        return n
 
 
 
-target = "abcdef"
-wordBank = ["ab","abc","cd","def","abcd"]
+# target = "abcdef"
+# wordBank = ["ab","abc","cd","def","abcd"]
 
-print(countConstruct(target,wordBank))
-print(countConstruct("purple",["purp","p","ur","le","purpl"]))
+# print(countConstruct(target,wordBank))
+# print(countConstruct("purple",["purp","p","ur","le","purpl"]))
 
 
 # print(countConstruct("skateboard",["bo","rd","ate","t","ska","sk","boar"]))
 # print(countConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef",["e","ee","eee","eeee","eeeee","eeeeee"]))
+
+
+
+## by memoization
+
+# def countConstruct(target,wordBank,memo={}):
+#    if target in memo:
+#        return memo[target]
+#    n=0
+#    if target=='':
+#       return True
+
+#    for i in wordBank:
+#         if target.startswith(i):
+#             newword=target.replace(i,'')
+#             if countConstruct(newword,wordBank)==True:
+#                 n=n+1
+#                 memo[target]=countConstruct(newword,wordBank)
+                
+#    memo[target]=n
+
+#    return memo[target]
+
+
+
+# target = "abcdef"
+# wordBank = ["ab","abc","cd","def","abcd"]
+
+# print(countConstruct(target,wordBank))
+# print(countConstruct("purple",["purp","p","ur","le","purpl"]))
+
+
+# # print(countConstruct("skateboard",["bo","rd","ate","t","ska","sk","boar"]))
+# print(countConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef",["e","ee","eee","eeee","eeeee","eeeeee"]))
+
+
+
+
+#######################Bring back all the combinations that can create target word
+
+
+# def all_construct(target, word_bank):
+#     if target == '':
+#         return [[]]
+    
+#     result = []
+
+#     for word in word_bank:
+#         if target.startswith(word):
+#             suffix = target[len(word):]
+#             suffix_ways = all_construct(suffix, word_bank)
+#             target_ways = [ [word] + way for way in suffix_ways ]
+#             result.extend(target_ways)
+    
+#     return result
+
+# print(all_construct("purple", ["purp", "p", "ur", "le", "purpl"]))
+# print(all_construct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"]))
+# print(all_construct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", ["e", "ee", "eee", "eeee", "eeeee", "eeeeee"]))
+
+
+##by memoization
+
+# def all_construct(target, word_bank,memo={}):
+#     if target in memo:
+#         return memo[target]
+#     if target == '':
+#         return [[]]
+    
+#     result = []
+
+#     for word in word_bank:
+#         if target.startswith(word):
+#             suffix = target[len(word):]
+#             suffix_ways = all_construct(suffix, word_bank)
+#             target_ways = [ [word] + way for way in suffix_ways ]
+#             result.extend(target_ways)    
+    
+#     memo[target]=result
+#     return memo[target]
+
+# print(all_construct("purple", ["purp", "p", "ur", "le", "purpl"]))
+# print(all_construct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"]))
+# print(all_construct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", ["e", "ee", "eee", "eeee", "eeeee", "eeeeee"]))
+
+
+
+
+
+
+
+
+
+
+
+######################################              TABULATION              ################################################
