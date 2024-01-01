@@ -415,3 +415,50 @@ by storing the results of expensive function calls to pure functions and returni
 
 
 ######################################              TABULATION              ################################################
+
+
+#fibonacci  by tabulation
+
+# def fib(n):
+#     if n <= 1:
+#         return n
+    
+#     table = [0] * (n + 2)  # Because when we do i+2 it has to be equal or lower than n. so it has to be n+2 not n+1.
+#     table[1] = 1
+    
+#     for i in range(n):
+#         table[i + 1] += table[i]
+#         table[i + 2] += table[i]
+    
+#     return table[n]
+# #### you can return table and find out what is going on inside of table
+# print(fib(6))
+# print(fib(8))
+# print(fib(55))
+
+
+
+
+##################grid traveler by tabulation
+
+### in this example let's say tables[i][j]=1 . So tables[i+1][j]+=tables[i][j] and tables[i][j+1]+=tables[i][j]
+def gridTraveler(m,n):
+    tables=[]
+    for i in range(n+1):
+        tables.append(list(map(int,[0]*(m+1))))
+    tables[1][1]=1
+
+    for i in range(n + 1):
+        for j in range(m + 1):
+            if i + 1 <= n:
+                tables[i + 1][j] += tables[i][j]
+            if j + 1 <= m:
+                tables[i][j + 1] += tables[i][j]
+
+    return tables[n][m]
+
+
+print(gridTraveler(3,3))
+
+##in in the tabulation 
+    

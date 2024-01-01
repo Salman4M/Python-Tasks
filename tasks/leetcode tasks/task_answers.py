@@ -3652,23 +3652,57 @@ nums = [12,9]
 
 
 ##########################################33#####498. Diagonal Traverse
-from collections import defaultdict
+# from collections import defaultdict
 
-matrix = [[1,2,3],[4,5,6],[7,8,9]]
-
-
-d= defaultdict(list)
-for i in range(len(matrix)):
-    for j in range(len(matrix[i])):
-        d[i+j].append(matrix[i][j])
+# matrix = [[1,2,3],[4,5,6],[7,8,9]]
 
 
-res=[]
+# d= defaultdict(list)
+# for i in range(len(matrix)):
+#     for j in range(len(matrix[i])):
+#         d[i+j].append(matrix[i][j])
 
-for key,val in d.items():
-    if key%2==0:
-        res.extend(d[key][::-1])
-    else:
-        res.extend(d[key])
 
-print(res)
+# res=[]
+
+# for key,val in d.items():
+#     if key%2==0:
+#         res.extend(d[key][::-1])
+#     else:
+#         res.extend(d[key])
+
+# print(res)
+
+########################################################## 54. Spiral Matrix
+
+
+class Solution:
+    def spiralOrder(self, matrix):
+        if not matrix:
+            return []
+
+        top, bottom, left, right = 0, len(matrix), 0, len(matrix[0])
+        result = []
+        
+        while left < right and top < bottom:
+            for i in range(left, right):
+                result.append(matrix[top][i])
+            top += 1
+            
+            for i in range(top, bottom):
+                result.append(matrix[i][right-1])
+            right -= 1
+            
+            if not (left<right and top<bottom):
+                break
+
+            for i in range(right-1,left-1,-1):
+                result.append(matrix[bottom-1][i])
+            bottom-= 1
+
+            for i in range(bottom-1,top-1,-1):
+                result.append(matrix[i][left])
+            left+=1
+
+
+        return result
