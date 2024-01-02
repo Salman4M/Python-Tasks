@@ -815,6 +815,31 @@ import numpy
 
 
 
+################################3Grading Students
+
+
+# n=int(input())
+
+# a=1
+# b=2
+
+# grades=[26,38,44,78]
+
+# for j in range(n):
+    
+#     if grades[j]>37:
+#         if grades[j]%5==0:
+#             print(grades[j])
+#         else:
+#             if (grades[j]+a)%5==0:
+#                 print(grades[j]+a)
+#             elif (grades[j]+b)%5==0:
+#                 print(grades[j]+b)
+#             else:
+#                 print(grades[j])
+#     else:
+#         print(grades[j])
+        
 
 
 
