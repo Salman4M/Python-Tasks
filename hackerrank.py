@@ -886,7 +886,7 @@ import numpy
 
 
 
-#################################Number Line Jumps
+###############################################Number Line Jumps
 
 
 # values=list(map(int,input().split()))
@@ -907,4 +907,21 @@ import numpy
 
 
 
-######################################Between Two Sets
+##############################################Between Two Sets
+
+# a=[2,6]
+# b=[24,36]
+
+# count=0
+# for x in range(max(a),min(b)+1):
+#     if all(x % num == 0 for num in a) and all(num % x == 0 for num in b):
+#         count+=1
+
+
+# print(count)
+
+
+
+############################################Breaking the Record
+
+    
