@@ -964,8 +964,26 @@ import numpy
 # print(count)
 
 
+######################################Divisible Sum Pairs
+
+# ar=[1,2,3,4,5,6]
+# k=5
+# sum=0
+# count=0
+# for ind1,val1 in enumerate(ar):
+#     for ind2,val2 in enumerate(ar):
+#         if ind1!=ind2:
+#             sum=val1+val2
+#             if sum%k==0:
+#                 count+=1
+#                 print(val1,val2,sum)
 
 
-    
+#             sum=0
+
+
+        
+
+# print(int(count/2))
 
 
