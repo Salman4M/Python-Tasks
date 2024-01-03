@@ -883,3 +883,28 @@ import numpy
 #         org+=1
 # print(org)
 
+
+
+
+#################################Number Line Jumps
+
+
+# values=list(map(int,input().split()))
+# x1=values[0]
+# v1=values[1]
+# x2=values[2]
+# v2=values[3]
+
+# if (x1>x2 and v1<v2) or (x2>x1 and v1>v2):
+#     b=x1-x2
+#     a=v1-v2
+#     if b%a==0:
+#         print('YES')
+#     else:
+#         print('NO')
+# else:
+#     print('NO')
+
+
+
+######################################Between Two Sets
