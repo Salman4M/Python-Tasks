@@ -987,3 +987,42 @@ import numpy
 # print(int(count/2))
 
 
+################################################Migratory Birds   O(n2)
+
+# arr=[1 ,2 ,3 ,4 ,5 ,4 ,3 ,2 ,1 ,3 ,4]
+
+# numandrep=dict.fromkeys(arr,0)
+
+# for i in range(len(arr)):
+#     for i in arr:
+#         numandrep[i]+=1
+ 
+# a=max(numandrep.values())
+# lst=sorted(list(numandrep.keys()))
+
+# for i in lst:
+#     if numandrep.get(i)==a:
+#         print(i)
+
+
+
+##### O(n) time complexity by chatgpt
+# def migratoryBirds(arr):
+
+#     bird_count = {}
+
+#     # Iterate through the array to count occurrences of each bird type
+#     for bird in arr:
+#         bird_count[bird] = bird_count.get(bird, 0) + 1
+
+#     # Initialize variables to keep track of the most common bird type and its frequency
+#     max_bird = None
+#     max_count = 0
+
+#     # Iterate through the dictionary to find the most common bird type
+#     for bird, count in bird_count.items():
+#         if count > max_count or (count == max_count and bird < max_bird):
+#             max_bird = bird
+#             max_count = count
+
+#     return max_bird
