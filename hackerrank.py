@@ -917,11 +917,55 @@ import numpy
 #     if all(x % num == 0 for num in a) and all(num % x == 0 for num in b):
 #         count+=1
 
-
 # print(count)
 
 
 
 ############################################Breaking the Record
 
+# scores=[10 ,5 ,20 ,20, 4, 5 ,2 ,25,1]
+# scores=[3 ,4 ,21, 36 ,10, 28, 35, 5 ,24, 42]
+
+# cmin=0
+# cmax=0
+# min=scores[0]
+# max=scores[0]
+# for i in scores[1:]:
+#     if i>max:
+#         max=i
+#         cmax+=1
+#     elif i<min:
+#         min=i
+#         cmin+=1
+
+# print(cmax,cmin)
+
+
+# #################################################Subarray Division    
+# s=[2 ,5, 1, 3, 4, 4, 3, 5, 1, 1, 2, 1, 4, 1, 3, 3 ,4 ,2 ,1]
+
+# d=18
+# m=7
+
+# sum = 0
+# count = 0
+
+
+# for i in range(len(s)-m+1):
+#     for j in range(i,i+m):
+#         sum += s[j]
+        
+#     if sum == d:
+#         count += 1
+        
+#     sum = 0
     
+
+# print(count)
+
+
+
+
+    
+
+
