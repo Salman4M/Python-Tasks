@@ -1126,3 +1126,61 @@ import numpy
 #         count+=a
 
 # print(count)
+
+
+############################################Drawing Book
+
+# n=7
+# p=4
+# page=1
+# count=0
+
+# if n-p>p-page:
+#     page=1
+#     for i in range(n):
+#         if (page+1)%2!=0 or page==p:
+#                 count=0
+#                 break
+#         else:
+#             page+=2
+#             count+=1
+#             if page-1==p or page==p:
+#                 break
+
+# else:
+#     page=n
+#     for i in range(n,0,-1):
+#         if n%2==0:
+#             ##########if length is even and equal to target
+#             if page==p:
+#                 print(True)
+#                 count=0
+#                 break
+
+#             else:
+#                 page-=2
+#                 count+=1
+#                 if page==p or page+1==p:
+#                     break
+
+#             ##########if length is odd and equal to target or length minus one
+
+#         elif n%2!=0:
+#             if n-p<=1:
+#                 if (page-1)%2==0 or page==p:
+#                     count=0
+#                     # print(True)
+#                     break
+#             else:
+#                 page-=2
+#                 count+=1
+#                 if page==p or page-1==p:
+#                     break
+
+
+# print(count)
+        
+
+
+
+
