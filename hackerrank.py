@@ -1026,3 +1026,52 @@ import numpy
 #             max_count = count
 
 #     return max_bird
+
+
+
+##################################################3Day of the Programmer
+
+# jan,march,april,may,june,july,august,sep,oct,nov,dec=31,31,30,31,30,31,31,30,31,30,31
+
+# months=[jan,march,april,may,june,july,august,sep,oct,nov,dec]
+# feb=28
+# year=1918
+# counter=1
+# day=0
+# if year>=1919:
+#     if (year%400==0) or (year%4==0 and year%100!=0):
+#         feb+=1
+
+# elif 1700<=year<=1917:
+#     if year%4==0:
+#         feb+=1
+
+# elif year==1918:
+#     feb-=13
+
+
+# for i in range(len(months)):
+#     feb+=months[i]
+
+#     counter+=1
+#     print(256-feb)
+#     if 256-feb<30:
+#         day=256-feb
+#         counter+=1
+#         # print(counter)
+#         break
+
+# dates=[day,counter,year]
+
+
+# for i in range(len(dates)):
+#     if len(str(dates[i]))==1:
+#         dates[i]='0'+str(dates[i])
+#     dates[i]=str(dates[i])
+
+
+# full='.'.join(dates)
+
+# print(full)
+
+
