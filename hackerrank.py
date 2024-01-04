@@ -1075,3 +1075,35 @@ import numpy
 # print(full)
 
 
+
+#############################################################Bill Division
+# k=1
+# bill=[3,10,2,9]
+# b=7
+
+# def bonAppetit(bill, k, b):
+
+#     total=0
+#     for i in range(n):
+#         if i!=k:
+#             total+=bill[i]
+
+#     if total/2==b:
+#         return 'Bon Appetit'
+#     else:
+#         total=b-total/2
+#         return int(total)
+
+# first_multiple_input = input().rstrip().split()
+
+
+# n = int(first_multiple_input[0])
+
+# k = int(first_multiple_input[1])
+
+# bill = list(map(int, input().rstrip().split()))
+
+# b = int(input().strip())
+
+# myobj=bonAppetit(bill,k,b)
+# print(myobj)
