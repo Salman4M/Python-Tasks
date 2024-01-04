@@ -993,10 +993,10 @@ import numpy
 
 # numandrep=dict.fromkeys(arr,0)
 
-# for i in range(len(arr)):
-#     for i in arr:
-#         numandrep[i]+=1
- 
+# for i in arr:
+#     numandrep[i]+=1
+
+# print(numandrep) 
 # a=max(numandrep.values())
 # lst=sorted(list(numandrep.keys()))
 
@@ -1107,3 +1107,22 @@ import numpy
 
 # myobj=bonAppetit(bill,k,b)
 # print(myobj)
+
+
+###############################################Sales by Match
+
+# ar = [10, 20, 20, 10, 10, 30, 50, 10, 20]
+# count=0
+
+# dic= dict.fromkeys(ar,0)
+
+
+# for i in ar:
+#     dic[i]+=1
+
+# for key,val in dic.items():
+#     if val>=2:
+#         a=val//2
+#         count+=a
+
+# print(count)
