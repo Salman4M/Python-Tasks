@@ -1228,3 +1228,23 @@ import numpy
 #     print(-1)
 
 # print(max)
+
+
+######################################################Cats and a Mouse
+
+# def catAndMouse(x,y,z):
+#     x=abs(x-z)
+#     y=abs(y-z)
+
+#     if x>y:
+#         return 'Cat B'
+#     elif x<y:
+#         return 'Cat A'
+#     else:
+#         return 'Mouse C'
+
+# x=5
+# y=3
+# z=1
+
+# print(catAndMouse(x,y,z))
