@@ -1181,6 +1181,33 @@ import numpy
 # print(count)
         
 
+##############################################Counting Valleys
 
+# steps = 8
+# path='UDDDUDUU'
+# counter=0
+# valley=0
+# updown=[]
+# final=0
+# for i in range(steps):
+#     if path[i]=='U':
+#         counter+=1
+#         updown.append(counter)
 
+#     elif path[i]=='D':
+#         counter-=1
+#         updown.append(counter)
+
+# print(updown)
+
+# if all( i>=0 for i in updown):
+#     print(0)
+# else:
+#     for i in range(len(updown)):
+#         if updown[i]==0 and updown[i-1]<0:
+#             final+=1
+
+# print(final)
+
+    
 
