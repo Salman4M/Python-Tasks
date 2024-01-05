@@ -1211,3 +1211,20 @@ import numpy
 
     
 
+###############################################Electronics Shop
+
+# b = 10
+# keyboards=[3,1]
+# drives=[5,2,8]
+
+# max=0
+# for i in keyboards:
+#     for j in drives:
+#         a=i+j
+#         if b-a>=0:
+#             if a>max:
+#                 max=a
+# if max==0:
+#     print(-1)
+
+# print(max)
