@@ -1248,3 +1248,32 @@ import numpy
 # z=1
 
 # print(catAndMouse(x,y,z))
+
+
+#####################################################Picking Numbers
+# a=[1,2,2,3,1,2]
+# a=[4 ,6 ,5 ,3 ,3 ,1]
+# a=[1,1,2,2,2,4,4,5,5,5]
+
+
+# b=sorted(a)
+# print(b)
+# min=0
+# res=[]
+
+# for i in range(0,len(b)):
+#     for j in range(i+1,len(b)):
+#         if b[i]+1==b[j] or b[i]==b[j]:
+#             min+=1
+#     res.append(min)
+#     min=0
+
+# results=max(res)+1
+
+# print(results)
+
+
+
+
+
+
