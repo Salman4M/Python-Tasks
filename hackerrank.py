@@ -1273,7 +1273,24 @@ import numpy
 # print(results)
 
 
+#####################################################Climbing the Leaderboard
 
 
+# ranked=[100,90,90,80]
+# # ranked=[100,100,50,40,40,20,10]
+
+# player=[70,80,105]
+# # player=[5,25,50,120]
 
 
+# sortRank=list(reversed(list(set(ranked))))
+# scores=[]
+# for i in player:
+#     if not i in sortRank:
+#         sortRank.append(i)
+#         sortRank=sorted(sortRank)
+#         sortRank=list(reversed(sortRank))    
+#     scores.append(sortRank.index(i)+1)
+
+    
+# print(scores)
