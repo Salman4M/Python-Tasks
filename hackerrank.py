@@ -1276,28 +1276,28 @@ import numpy
 #####################################################Climbing the Leaderboard (medium)
 
 
-ranked=[100,90,90,80]
-# ranked=[100,100,50,40,40,20,10]
+# ranked=[100,90,90,80]
+# # ranked=[100,100,50,40,40,20,10]
 
-player=[70,80,105]
-# player=[5,25,50,120]
+# player=[70,80,105]
+# # player=[5,25,50,120]
 
-rankings = []
-sortRank=list(reversed(sorted(list(set(ranked)))))
+# rankings = []
+# sortRank=list(reversed(sorted(list(set(ranked)))))
 
-print(player,sortRank)
-length = len(sortRank)
+# print(player,sortRank)
+# length = len(sortRank)
 
-for i in player:
-    while (length>0 and sortRank[length-1]<=i):
-        print(sortRank[length-1],i)
-        length -= 1
-        print(length)
-    rankings.append(length+1)
-print(rankings)
+# for i in player:
+#     while (length>0 and sortRank[length-1]<=i):
+#         print(sortRank[length-1],i)
+#         length -= 1
+#         print(length)
+#     rankings.append(length+1)
+# print(rankings)
 
 
-############ O(n2)
+############ O(n)
 # sortRank=list(reversed(list(set(ranked))))
 # d=len(player)
 # for i in range(len(player)):
@@ -1312,3 +1312,15 @@ print(rankings)
 
     
 # print(scores)
+
+
+#############################################The Hurdle Race
+
+# k=5
+# height=[4,5,6,3,2,1]
+
+# if all(k>=i for i in height):
+#     print(0)
+# else:
+#     print(max(height)-k)
+
