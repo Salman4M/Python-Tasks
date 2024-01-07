@@ -1324,3 +1324,28 @@ import numpy
 # else:
 #     print(max(height)-k)
 
+
+#############################################Designer PDF Viewer
+
+# h=[1,3,1, 3 ,1, 4, 1 ,3 ,2 ,5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+# h=[1 ,3 ,1 ,3 ,1, 4 ,1 ,3 ,2 ,5 ,5 ,5 ,5 ,5 ,5 ,5 ,5 ,5 ,5 ,5 ,5, 5 ,5 ,5, 5, 7]
+# word='abc'
+# word='zaba'
+
+# import string
+
+# pointsAndString={}
+# a=string.ascii_lowercase
+
+# for i in range(26):
+#     pointsAndString[a[i]]=h[i]
+
+
+# needs=[]
+    
+# for key,val in pointsAndString.items():
+#     if key in word:
+#         needs.append(val)
+
+# print(needs)
+# print(max(needs)*len(word))
