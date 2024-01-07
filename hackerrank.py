@@ -1349,3 +1349,16 @@ import numpy
 
 # print(needs)
 # print(max(needs)*len(word))
+
+
+
+########################################Utopian Tree
+# b=0
+# n=5
+# for i in range(n+1):
+#     if i%2==0:
+#         b+=1
+#     elif i%2!=0:
+#         b*=2
+
+# print(b)
