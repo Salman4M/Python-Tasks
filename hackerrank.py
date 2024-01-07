@@ -1273,24 +1273,42 @@ import numpy
 # print(results)
 
 
-#####################################################Climbing the Leaderboard
+#####################################################Climbing the Leaderboard (medium)
 
 
-# ranked=[100,90,90,80]
-# # ranked=[100,100,50,40,40,20,10]
+ranked=[100,90,90,80]
+# ranked=[100,100,50,40,40,20,10]
 
-# player=[70,80,105]
-# # player=[5,25,50,120]
+player=[70,80,105]
+# player=[5,25,50,120]
+
+rankings = []
+sortRank=list(reversed(sorted(list(set(ranked)))))
+
+print(player,sortRank)
+length = len(sortRank)
+
+for i in player:
+    while (length>0 and sortRank[length-1]<=i):
+        print(sortRank[length-1],i)
+        length -= 1
+        print(length)
+    rankings.append(length+1)
+print(rankings)
 
 
+############ O(n2)
 # sortRank=list(reversed(list(set(ranked))))
-# scores=[]
-# for i in player:
-#     if not i in sortRank:
-#         sortRank.append(i)
-#         sortRank=sorted(sortRank)
-#         sortRank=list(reversed(sortRank))    
-#     scores.append(sortRank.index(i)+1)
+# d=len(player)
+# for i in range(len(player)):
+#     while d>0:
+#         scores=[]
+#         if not player[len(player)-d] in sortRank:
+#             sortRank.append(player[len(player)-d])
+#             sortRank=sorted(sortRank)
+#             sortRank=list(reversed(sortRank))
+#         scores.append(sortRank.index(player[len(player)-d])+1)
+#         d-=1
 
     
 # print(scores)
