@@ -1382,3 +1382,17 @@ import numpy
 #         return 'YES'
 #     return 'NO'
     
+##########################################Beautiful Days at the Movies
+
+# i=20
+# j=23
+# k=6
+
+# counter=0
+# for day in range(i,j+1):
+#     g=int(str(day)[::-1])
+#     if abs((day-g)%k==0):
+#         counter+=1
+
+# print(counter)
+       
