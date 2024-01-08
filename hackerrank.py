@@ -1362,3 +1362,23 @@ import numpy
 #         b*=2
 
 # print(b)
+
+
+#########################################Angry Professor
+
+# k=3
+# counter=0
+# a=[-2,-1,0,1,2]
+# a=[-1,-3,4,2]
+
+# def angryProfessor(k, a):
+#     counter=0
+
+#     for i in range(len(a)):
+#         if a[i]<=0:
+#             counter+=1
+    
+#     if counter<k:
+#         return 'YES'
+#     return 'NO'
+    
