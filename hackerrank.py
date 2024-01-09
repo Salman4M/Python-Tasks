@@ -1413,3 +1413,24 @@ import numpy
 
 
 
+############################## O(n2)
+# prisoners=5
+# candies=2
+# start=1
+# start=start-1
+
+# for i in range(candies):
+#     candies-=1
+#     if start==prisoners:
+#         start=0
+
+#     start+=1
+
+# print(start)
+
+
+############################## O(n)
+# prisonerNo = (s+m-1)%n
+#     if prisonerNo == 0:
+#         return n
+#     return prisonerNo
