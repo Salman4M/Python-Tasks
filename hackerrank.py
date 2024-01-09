@@ -1413,7 +1413,7 @@ import numpy
 
 
 
-############################## O(n2)
+##############################Circular Array Rotation O(n2)
 # prisoners=5
 # candies=2
 # start=1
@@ -1429,7 +1429,7 @@ import numpy
 # print(start)
 
 
-############################## O(n)
+############### O(n)
 # prisonerNo = (s+m-1)%n
 #     if prisonerNo == 0:
 #         return n
