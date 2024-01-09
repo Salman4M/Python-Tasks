@@ -1318,26 +1318,32 @@ a3 = [-1,-3,-7] #-->1
 
 
 # import the time module 
-import time 
+# import time 
 
-# define the countdown func. 
-def countdown(t): 
+# # define the countdown func. 
+# def countdown(t): 
 	
-	while t: 
-		days,remainder1 = divmod(t,86400)
-		hours,remainder = divmod(remainder1, 3600) 
-		mins,secs = divmod(remainder,60)
-		timer = '{:02d}:{:02d}:{:02d}:{:02d}'.format(days,hours,mins, secs) 
-		print(timer, end="\r") 
-		time.sleep(1) 
-		t -= 1
+# 	while t: 
+# 		days,remainder1 = divmod(t,86400)
+# 		hours,remainder = divmod(remainder1, 3600) 
+# 		mins,secs = divmod(remainder,60)
+# 		timer = '{:02d}:{:02d}:{:02d}:{:02d}'.format(days,hours,mins, secs) 
+# 		print(timer, end="\r") 
+# 		time.sleep(1) 
+# 		t -= 1
 	
-	print('Fire in the hole!!') 
+# 	print('Fire in the hole!!') 
 
 
-# input time in seconds 
-t = input("Enter the time in seconds: ") 
+# # input time in seconds 
+# t = input("Enter the time in seconds: ") 
 
-# function call 
-countdown(int(t)) 
+# # function call 
+# countdown(int(t)) 
 
+# from bs4 import BeautifulSoup
+
+# with open('filename.html', 'r') as html_file:
+#     content = html_file.read()
+
+# 	soup = BeautifulSoup(content,'lxml')

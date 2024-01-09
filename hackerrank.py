@@ -1396,3 +1396,20 @@ import numpy
 
 # print(counter)
        
+
+################################################Viral Advertising
+# n=5
+# shared=5
+# liked=2
+# cumulative=2
+
+# for i in range(n-1):
+#     shared=liked*3
+#     liked=shared//2
+#     cumulative+=liked
+#     print(shared,liked,cumulative)
+
+# # print(cumulative)
+
+
+
