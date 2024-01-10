@@ -1495,3 +1495,14 @@ import numpy
 
 # n=10
 # k=3
+
+
+########################################################Find Digits
+
+# n=1012
+# counter=0
+# for i in str(n):
+#     if int(i)!=0:
+#         if n%int(i)==0:
+#             counter+=1
+# print(counter)
