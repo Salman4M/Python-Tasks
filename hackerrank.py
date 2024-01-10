@@ -1434,3 +1434,24 @@ import numpy
 #     if prisonerNo == 0:
 #         return n
 #     return prisonerNo
+
+
+
+##################################################Circular Array Rotation
+
+# k=2
+# array=[1,2,3]
+# queries=[0,1,2]
+
+# for i in range(k):
+#     b=array[-1]
+#     array.pop()
+#     array.insert(0,b)
+
+# results=[]
+# for i in queries:
+#     results.append(array[i])
+
+# print(results)
+
+
