@@ -1464,3 +1464,34 @@ import numpy
 #         if p[p[j]-1]==i:
 #             print(j+1)
 
+
+#######################################################Jumping on the Clouds: Revisited
+
+# c = [0, 0, 1, 0, 0, 1, 1, 0]
+# # c = [0, 0, 1, 0]
+# c=[1 ,1 ,1 ,0 ,1 ,1 ,0 ,0 ,0 ,0]
+
+
+# def jumpingOnClouds(c, k):
+#     b=k
+#     e=100
+    
+#     if k>=n:
+#         k=k-n
+
+#     while k!=0:
+#         if c[k]==1:
+#             e-=2   
+#         e-=1
+#         k+=b
+
+#         if k>=n:
+#             k=k-n
+
+#     if c[k]==1:
+#         e-=2
+#     e-=1  
+#     return e
+
+# n=10
+# k=3
