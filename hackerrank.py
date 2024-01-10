@@ -1454,4 +1454,13 @@ import numpy
 
 # print(results)
 
+#######################################################Sequence Equation
+
+# p=[5,2,1,3,4]
+# f=sorted(p)
+
+# for i in f:
+#     for j in range(len(p)):
+#         if p[p[j]-1]==i:
+#             print(j+1)
 
