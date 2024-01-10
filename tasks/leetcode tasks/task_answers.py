@@ -3327,8 +3327,8 @@
 
 
 # nums=[98,54,6,34,66,63,52,39,62,46,75,28,65,18,37,18,97,13,80,33,69,91,78,19,40]
-k = 1      
-nums = [12,9]
+# k = 1      
+# nums = [12,9]
 # myobj= Solution(nums,k)
 
 # print(myobj.maximumOr())
@@ -3726,4 +3726,37 @@ nums = [12,9]
 
 # matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]]
 # target = 5
+
+
+
+################################################3. Longest Substring Without Repeating Characters O(n2)
+# max=0
+# s='abcabcbb'
+# s='bbbbb'
+# s='pwwkew'
+# if len(set(s))!=1:
+#     for i in range(len(s)):
+#         for j in range(i,len(s)):
+#             b=s[i:j+1]
+#             if len(set(b))==len(b):
+#                 if len(b)>max:
+#                     max=len(b)
+# else:
+#     max=1
+
+# print(max)
+ 
+
+##################################################1492. The kth Factor of n (medium)
+# k=4
+# n=4
+# factors=[]
+# for i in range(1,n+1):
+#     if n%i==0:
+#         factors.append(i)
+
+# if len(factors)>=k:
+#     print(factors[k-1])
+# else:
+#     print(-1)
 
