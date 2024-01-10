@@ -1,18 +1,18 @@
-# def fibonacci(n):
-#     now=0
-#     previous=1
-#     b=0
-#     if n<=2:
-#         return 1
-#     else:
-#         for i in range(2,n):
-#             b=now+previous
-#             now=previous
-#             previous=b
-#         return fibonacci(n-1)+fibonacci(n-2)
+def fibonacci(n):
+    now=0
+    previous=1
+    b=0
+    if n<=2:
+        return 1
+    else:
+        for i in range(2,n):
+            b=now+previous
+            now=previous
+            previous=b
+        return fibonacci(n-1)+fibonacci(n-2)
 
-# n=7
-# print(fibonacci(n))
+n=7
+print(fibonacci(n))
 
 
 
@@ -441,24 +441,24 @@ by storing the results of expensive function calls to pure functions and returni
 
 ##################grid traveler by tabulation
 
-### in this example let's say tables[i][j]=1 . So tables[i+1][j]+=tables[i][j] and tables[i][j+1]+=tables[i][j]
-def gridTraveler(m,n):
-    tables=[]
-    for i in range(n+1):
-        tables.append(list(map(int,[0]*(m+1))))
-    tables[1][1]=1
+# ### in this example let's say tables[i][j]=1 . So tables[i+1][j]+=tables[i][j] and tables[i][j+1]+=tables[i][j]
+# def gridTraveler(m,n):
+#     tables=[]
+#     for i in range(n+1):
+#         tables.append(list(map(int,[0]*(m+1))))
+#     tables[1][1]=1
 
-    for i in range(n + 1):
-        for j in range(m + 1):
-            if i + 1 <= n:
-                tables[i + 1][j] += tables[i][j]
-            if j + 1 <= m:
-                tables[i][j + 1] += tables[i][j]
+#     for i in range(n + 1):
+#         for j in range(m + 1):
+#             if i + 1 <= n:
+#                 tables[i + 1][j] += tables[i][j]
+#             if j + 1 <= m:
+#                 tables[i][j + 1] += tables[i][j]
 
-    return tables[n][m]
+#     return tables[n][m]
 
 
-print(gridTraveler(3,3))
+# print(gridTraveler(3,3))
 
 ##in in the tabulation 
     
