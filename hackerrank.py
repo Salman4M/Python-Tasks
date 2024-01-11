@@ -1527,3 +1527,29 @@ import numpy
 #     b*=i
 # print(b)
 
+
+
+
+####################################################3Append and Delete
+
+# s='hackerhappy'
+# t='hackerrank'
+# k=2
+# sequal=0
+# tequal=0
+# for i in range(1,len(s)):
+#     if s[0:i+1] not in t:
+#         print(s[0:i+1],i)
+#         sequal+=1
+
+# for i in range(1,len(t)):
+#     if t[0:i+1] not in s:
+#         print(t[0:i+1],i)
+#         tequal+=1
+
+# print(sequal+tequal)
+
+# if sequal+tequal<=k and len(s)>=len(t) or (len(set(s))==1 and len(s)>1):
+#     print("YES")
+# else:
+#     print("NO")

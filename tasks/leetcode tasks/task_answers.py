@@ -3760,20 +3760,22 @@
 # else:
 #     print(-1)
 
-counter=1
-s='abacaba'
 
-# possibilites=[]
+###################################################2405. Optimal Partition of String
+# counter=1
+# s='abacaba'
 
-a = ""
-for c in s:
-    if c in a: 
-        counter+= 1
-        a = ""
-    a += c
+# # possibilites=[]
+
+# a = ""
+# for c in s:
+#     if c in a: 
+#         counter+= 1
+#         a = ""
+#     a += c
 
 
-print(counter)
+# print(counter)
 # print(res)
     
 
@@ -3796,4 +3798,6 @@ print(counter)
 #     d+=1
      
 # print(possibilites)
+
+
 
