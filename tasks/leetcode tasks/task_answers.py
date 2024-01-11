@@ -3760,3 +3760,40 @@
 # else:
 #     print(-1)
 
+counter=1
+s='abacaba'
+
+# possibilites=[]
+
+a = ""
+for c in s:
+    if c in a: 
+        counter+= 1
+        a = ""
+    a += c
+
+
+print(counter)
+# print(res)
+    
+
+# s='ssssss'
+# b=''
+# now=''
+# possibilites=[]
+# d=1
+# for i in range(1,len(s)):
+#     b+=s[d]
+#     print(b,s[d])
+#     if len(set(b))==len(b) and len(b)<=2:
+#         now=b
+#         possibilites.append(now)
+
+#         #   possibilites.append(b)
+#     else:
+#         # possibilites.append(now)
+#         b=b[-1]
+#     d+=1
+     
+# print(possibilites)
+
