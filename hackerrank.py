@@ -1553,3 +1553,20 @@ import numpy
 #     print("YES")
 # else:
 #     print("NO")
+
+
+
+########################################Sherlock and Squares
+
+a=35
+b=70
+counter=0
+i=0
+while i**2<=b:
+    if i**2>=a:
+        counter+=1
+    else:
+        pass
+    i+=1
+
+print(counter)
