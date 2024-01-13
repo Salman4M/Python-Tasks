@@ -1573,28 +1573,51 @@ import numpy
 
 ########################################Library Fine
 
-hackos=0
-d1=2
-m1=7
-y1=1014
-d2=1
-m2=1
-y2=1015
+# hackos=0
+# d1=2
+# m1=7
+# y1=1014
+# d2=1
+# m2=1
+# y2=1015
 
-if d1>d2:
-    hackos+=(d1-d2)*15
+# if d1>d2:
+#     hackos+=(d1-d2)*15
 
-if m1>m2:
-    hackos=0
-    hackos+=(m1-m2)*500
-elif m2>m1:
-    hackos=0
+# if m1>m2:
+#     hackos=0
+#     hackos+=(m1-m2)*500
+# elif m2>m1:
+#     hackos=0
 
-if y1>y2:
-    hackos=0
-    hackos+=(y1-y2)*10000
-elif y2>y1:
-    hackos=0
+# if y1>y2:
+#     hackos=0
+#     hackos+=(y1-y2)*10000
+# elif y2>y1:
+#     hackos=0
     
-print(hackos)
+# print(hackos)
     
+################################################Cut the sticks
+
+# arr=[5,4,4,2,2,8]
+
+# arr=sorted(arr)
+# cut=min(arr)
+# iteration=len(arr)
+# stick=len(arr)
+
+# results=[]
+
+# for i in range(iteration):
+#     results.append(len(arr)-arr.count(0))
+#     for j in range(len(arr)):
+#         if arr[j]>=cut:
+#             arr[j]=arr[j]-cut
+
+#     counter=arr.count(0)
+#     index=len(arr)-counter
+#     cut=arr[-index]
+#     if arr.count(0)==len(arr):
+#         break
+# print(results)
