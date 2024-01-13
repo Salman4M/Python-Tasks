@@ -1558,15 +1558,43 @@ import numpy
 
 ########################################Sherlock and Squares
 
-a=35
-b=70
-counter=0
-i=0
-while i**2<=b:
-    if i**2>=a:
-        counter+=1
-    else:
-        pass
-    i+=1
+# a=35
+# b=70
+# counter=0
+# i=0
+# while i**2<=b:
+#     if i**2>=a:
+#         counter+=1
+#     else:
+#         pass
+#     i+=1
 
-print(counter)
+# print(counter)
+
+########################################Library Fine
+
+hackos=0
+d1=2
+m1=7
+y1=1014
+d2=1
+m2=1
+y2=1015
+
+if d1>d2:
+    hackos+=(d1-d2)*15
+
+if m1>m2:
+    hackos=0
+    hackos+=(m1-m2)*500
+elif m2>m1:
+    hackos=0
+
+if y1>y2:
+    hackos=0
+    hackos+=(y1-y2)*10000
+elif y2>y1:
+    hackos=0
+    
+print(hackos)
+    
