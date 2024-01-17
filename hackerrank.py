@@ -1621,3 +1621,27 @@ import numpy
 #     if arr.count(0)==len(arr):
 #         break
 # print(results)
+
+
+###################################################Repeated String
+# s='epsxyyflvrrrxzvnoenvpegvuonodjoxfwdmcvwctmekpsnamchznsoxaklzjgrqruyzavshfbmuhdwwmpbkwcuomqhiyvuztwvq'
+
+# n=549382313570
+
+# countSingle=s.count('a')
+
+# reps=n//len(s)
+
+# if n%len(s)==0:
+#     print(reps*countSingle)
+# else:
+#     print((reps*countSingle)+s[0:n%len(s)].count('a'))
+
+
+
+
+
+
+                
+                
+
