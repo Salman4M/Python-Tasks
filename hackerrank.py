@@ -1640,8 +1640,36 @@ import numpy
 
 
 
+#################################################Jumping on the Clouds (different than first one)
+
+# arr=[0 ,0 ,1 ,0, 0 ,0, 0, 1 ,0 ,0, 0, 0, 1 ,0 ,0 ,0 ,0 ,0 ,1 ,0 ,1, 0 ,0 ,0 ,1 ,0, 0,1 ,0 ,0 ,0 ,1 ,0 ,1 ,0 ,0, 0, 0, 0, 0, 0, 0, 1, 0, 0 ,1 ,0 ,1 ,0 ,0]
+
+# steps=0
+# k=0
+# for i in range(len(arr)):
+#     if steps+2<=len(arr)-1:
+#         if arr[steps+1]==0 and arr[steps+2]==0:
+#             steps+=2
+#             k+=1
+        
+#     if steps+1<=len(arr)-1:
+#         if arr[steps+1]==1:
+#             steps+=2
+#             k+=1
+        
+#         elif arr[steps+1]==0:
+#             steps+=1
+#             k+=1
+
+    # else:
+    #     break
 
 
-                
-                
+# print(k)
+
+### not solved yet
+
+
+
+
 
