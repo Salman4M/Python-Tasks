@@ -1642,34 +1642,35 @@ import numpy
 
 #################################################Jumping on the Clouds (different than first one)
 
-# arr=[0 ,0 ,1 ,0, 0 ,0, 0, 1 ,0 ,0, 0, 0, 1 ,0 ,0 ,0 ,0 ,0 ,1 ,0 ,1, 0 ,0 ,0 ,1 ,0, 0,1 ,0 ,0 ,0 ,1 ,0 ,1 ,0 ,0, 0, 0, 0, 0, 0, 0, 1, 0, 0 ,1 ,0 ,1 ,0 ,0]
+arr=[0 ,0 ,1 ,0, 0 ,0, 0, 1 ,0 ,0, 0, 0, 1 ,0 ,0 ,0 ,0 ,0 ,1 ,0 ,1, 0 ,0 ,0 ,1 ,0, 0,1 ,0 ,0 ,0 ,1 ,0 ,1 ,0 ,0, 0, 0, 0, 0, 0, 0, 1, 0, 0 ,1 ,0 ,1 ,0 ,0]
+arr=[0,0,0,1,0,0]
 
-# steps=0
-# k=0
-# for i in range(len(arr)):
-#     if steps+2<=len(arr)-1:
-#         if arr[steps+1]==0 and arr[steps+2]==0:
-#             steps+=2
-#             k+=1
-        
-#     if steps+1<=len(arr)-1:
-#         if arr[steps+1]==1:
-#             steps+=2
-#             k+=1
-        
-#         elif arr[steps+1]==0:
-#             steps+=1
-#             k+=1
+steps=0
+k=0
 
-    # else:
-    #     break
+for i in range(len(arr)):
+    if steps<len(arr)-2:
+        if arr[steps+1]==0 and arr[steps+2]==0:
+            k+=1
+            steps+=2
+            # print(steps,'first if')
+        elif arr[steps+1]==0 and arr[steps+2]==1:
+            steps+=1
+            k+=1
+            # print(steps,'second if')
+
+        elif arr[steps+1]==1 and arr[steps+2]==0:
+            k+=1
+            steps+=2
+            # print(steps,'third if')
+
+        elif arr[steps+1]==0:
+            k+=1
+            # print(steps,'fourth if')
+        print(steps)
 
 
-# print(k)
-
-### not solved yet
-
-
+print(k)
 
 
 

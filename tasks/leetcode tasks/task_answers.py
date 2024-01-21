@@ -3801,3 +3801,20 @@
 
 
 
+################################198. House Robber
+# nums=[2,7,9,3,1,6]
+# steps=0
+# res=0
+# for ind1,val1 in enumerate(nums):
+    
+#     for ind2,val2 in enumerate(nums):
+#         if ind2-before>1:
+#         if ind1!=ind2 and ind2-ind1>0:
+#             if max(nums[ind2+1:])!=[]:
+#                 res+=max(nums[ind2+1:])
+#     print(res)
+
+### promised to solve
+
+
+
