@@ -3803,18 +3803,108 @@
 
 ################################198. House Robber
 # nums=[2,7,9,3,1,6]
-# steps=0
-# res=0
-# for ind1,val1 in enumerate(nums):
-    
-#     for ind2,val2 in enumerate(nums):
-#         if ind2-before>1:
-#         if ind1!=ind2 and ind2-ind1>0:
-#             if max(nums[ind2+1:])!=[]:
-#                 res+=max(nums[ind2+1:])
-#     print(res)
+# n = len(nums)
 
-### promised to solve
+
+# a,b=0,0
+# for i in nums:
+#     a,b=max(a,b), a+i
+#     print(a,b)
 
 
 
+
+
+
+
+
+
+
+
+# s='bcabc'
+
+# b=''
+# dic=
+# for i in range(len(s)):
+#     if b.count(s[i])<1:
+#         b+=s[i]
+#         for j in range(i+1,len(s)):
+#             if b.count(s[j])<1:
+#                 b+=s[j]
+#         if len(set(s))==len(b):
+#             print(b)
+#         b=''
+            
+    # z-=1
+
+# a=(s.index('a'))
+# b=''
+# for i in range(a,len(s)):
+#     if b.count(s[i])<1:
+#         b+=s[i]
+   
+# print(b)
+# print(set(b))
+
+
+
+
+# hours=[9,9,6,0,6,6,9]
+# interval=0
+# tired=0
+# perform=0
+# max=0
+# a=[]
+# for i in range(len(hours)):
+#     a.append(hours[i])
+#     for j in range(i+1,len(hours)):
+#         a.append(hours[j])
+#         for z in range(len(a)):
+#             if a.count(a[z])<=8:
+#                 perform+=1
+#             if a.count(a[z])>8:
+#                 tired+=1
+#             print(tired,perform)
+#         if tired>perform:
+#             print(len(a))
+#     tired=0
+#     perform=0
+#     a=[]
+
+
+# for i in hours:
+#     if i>8:
+#         tired+=1
+#     elif i<=8:
+#         perform+=1
+
+#     if tired>perform:
+#         interval+=1
+#         if interval>max:
+#             max=interval
+#     else:
+#         tired=0
+#         perform=0
+#         interval=0
+#     print(interval)
+
+# print(max)
+
+####################################1137. N-th Tribonacci Number
+
+# def tribonacci(self, n: int):
+#     first=0
+#     second=1
+#     third=1
+#     total=0
+#     if n==1 or n==2:
+#         return 1 
+#     elif n==0:
+#         return 0
+#     for i in range(4,n+2):
+#         total=first+second+third
+#         first=second
+#         second=third
+#         third=total
+
+#     return total
