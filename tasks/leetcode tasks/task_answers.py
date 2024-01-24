@@ -3908,3 +3908,37 @@
 #         third=total
 
 #     return total
+
+
+
+##############################################1185. Day of the Week
+###Zeller’s Congruence | Find the Day for a Date
+
+ 
+# def Zellercongruence(day, month, year) :
+#     a={
+#         0 : "Saturday",
+#         1 : "Sunday",
+#         2 : "Monday",
+#         3 : "Tuesday",
+#         4 : "Wednesday",
+#         5 : "Thursday",
+#         6 : "Friday",
+#     }
+#     if (month == 1) :
+#         month = 13
+#         year = year - 1
+ 
+#     if (month == 2) :
+#         month = 14
+#         year = year - 1
+#     q = day
+#     m = month
+#     k = year % 100
+#     j = year // 100
+#     h = q + 13 * (m + 1) // 5 + k + k // 4 + j // 4 + 5 * j
+#     h = h % 7
+#     return a[h]
+
+
+# print(Zellercongruence(31,8,2019))
