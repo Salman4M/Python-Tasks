@@ -3946,32 +3946,32 @@
 
 #####################################1160. Find Words That Can Be Formed by Characters
 
-words = ["cat","bt","hat","tree"]
-chars = "atach"
+# words = ["cat","bt","hat","tree"]
+# chars = "atach"
 
-words=["dyiclysmffuhibgfvapygkorkqllqlvokosagyelotobicwcmebnpznjbirzrzsrtzjxhsfpiwyfhzyonmuabtlwin","ndqeyhhcquplmznwslewjzuyfgklssvkqxmqjpwhrshycmvrb","ulrrbpspyudncdlbkxkrqpivfftrggemkpyjl","boygirdlggnh","xmqohbyqwagkjzpyawsydmdaattthmuvjbzwpyopyafphx","nulvimegcsiwvhwuiyednoxpugfeimnnyeoczuzxgxbqjvegcxeqnjbwnbvowastqhojepisusvsidhqmszbrnynkyop","hiefuovybkpgzygprmndrkyspoiyapdwkxebgsmodhzpx","juldqdzeskpffaoqcyyxiqqowsalqumddcufhouhrskozhlmobiwzxnhdkidr","lnnvsdcrvzfmrvurucrzlfyigcycffpiuoo","oxgaskztzroxuntiwlfyufddl","tfspedteabxatkaypitjfkhkkigdwdkctqbczcugripkgcyfezpuklfqfcsccboarbfbjfrkxp","qnagrpfzlyrouolqquytwnwnsqnmuzphne","eeilfdaookieawrrbvtnqfzcricvhpiv","sisvsjzyrbdsjcwwygdnxcjhzhsxhpceqz","yhouqhjevqxtecomahbwoptzlkyvjexhzcbccusbjjdgcfzlkoqwiwue","hwxxighzvceaplsycajkhynkhzkwkouszwaiuzqcleyflqrxgjsvlegvupzqijbornbfwpefhxekgpuvgiyeudhncv","cpwcjwgbcquirnsazumgjjcltitmeyfaudbnbqhflvecjsupjmgwfbjo","teyygdmmyadppuopvqdodaczob","qaeowuwqsqffvibrtxnjnzvzuuonrkwpysyxvkijemmpdmtnqxwekbpfzs","qqxpxpmemkldghbmbyxpkwgkaykaerhmwwjonrhcsubchs"]
-chars="usdruypficfbpfbivlrhutcgvyjenlxzeovdyjtgvvfdjzcmikjraspdfp"
+# words=["dyiclysmffuhibgfvapygkorkqllqlvokosagyelotobicwcmebnpznjbirzrzsrtzjxhsfpiwyfhzyonmuabtlwin","ndqeyhhcquplmznwslewjzuyfgklssvkqxmqjpwhrshycmvrb","ulrrbpspyudncdlbkxkrqpivfftrggemkpyjl","boygirdlggnh","xmqohbyqwagkjzpyawsydmdaattthmuvjbzwpyopyafphx","nulvimegcsiwvhwuiyednoxpugfeimnnyeoczuzxgxbqjvegcxeqnjbwnbvowastqhojepisusvsidhqmszbrnynkyop","hiefuovybkpgzygprmndrkyspoiyapdwkxebgsmodhzpx","juldqdzeskpffaoqcyyxiqqowsalqumddcufhouhrskozhlmobiwzxnhdkidr","lnnvsdcrvzfmrvurucrzlfyigcycffpiuoo","oxgaskztzroxuntiwlfyufddl","tfspedteabxatkaypitjfkhkkigdwdkctqbczcugripkgcyfezpuklfqfcsccboarbfbjfrkxp","qnagrpfzlyrouolqquytwnwnsqnmuzphne","eeilfdaookieawrrbvtnqfzcricvhpiv","sisvsjzyrbdsjcwwygdnxcjhzhsxhpceqz","yhouqhjevqxtecomahbwoptzlkyvjexhzcbccusbjjdgcfzlkoqwiwue","hwxxighzvceaplsycajkhynkhzkwkouszwaiuzqcleyflqrxgjsvlegvupzqijbornbfwpefhxekgpuvgiyeudhncv","cpwcjwgbcquirnsazumgjjcltitmeyfaudbnbqhflvecjsupjmgwfbjo","teyygdmmyadppuopvqdodaczob","qaeowuwqsqffvibrtxnjnzvzuuonrkwpysyxvkijemmpdmtnqxwekbpfzs","qqxpxpmemkldghbmbyxpkwgkaykaerhmwwjonrhcsubchs"]
+# chars="usdruypficfbpfbivlrhutcgvyjenlxzeovdyjtgvvfdjzcmikjraspdfp"
 
-total=0
-CharCount = [0] * 26
-for char in chars:
-    CharCount[ord(char) - ord("a")] += 1
+# total=0
+# CharCount = [0] * 26
+# for char in chars:
+#     CharCount[ord(char) - ord("a")] += 1
 
-for word in words:
-    WordCount = [0] * 26
-    for j in word:
-        WordCount[ord(j) - ord("a")] += 1
+# for word in words:
+#     WordCount = [0] * 26
+#     for j in word:
+#         WordCount[ord(j) - ord("a")] += 1
     
-    right=True
-    for i in range(26):
-        if CharCount[i]<WordCount[i]:
-            right=False
-            break
+#     right=True
+#     for i in range(26):
+#         if CharCount[i]<WordCount[i]:
+#             right=False
+#             break
 
-    if right:
-        total+=len(word)
+#     if right:
+#         total+=len(word)
 
-print(total)
+# print(total)
 
 # words = ["hello","world","leetcode"]
 # chars = "welldonehoneyr"
@@ -4009,14 +4009,75 @@ print(total)
 
 ####################################################################  Pascal's Triangle
 
-a=[[1]]
-n=5
+# a=[[1]]
+# n=5
 
-for i in range(n-1):
-    addZero=[0]+a[-1]+[0]
-    row=[]
-    for j in range(len(a[-1])+1):########+1 o deməkdir ki növbəti sıranı almaq üçün olduğumuzun sıranın uzunluğunundan bir vahid böyük ədədi də istifadə etməliyik
-        row.append(addZero[j]+addZero[j+1])
-    a.append(row)
-print(a)
+# for i in range(n-1):
+#     addZero=[0]+a[-1]+[0]
+#     row=[]
+#     for j in range(len(a[-1])+1):########+1 o deməkdir ki növbəti sıranı almaq üçün olduğumuzun sıranın uzunluğunundan bir vahid böyük ədədi də istifadə etməliyik
+#         row.append(addZero[j]+addZero[j+1])
+#     a.append(row)
+# print(a)
+
+###recursive approach
+
+# class Solution:
+#     def generate(self, numRows):
+#         if numRows == 0:
+#             return []
+#         if numRows == 1:
+#             return [[1]]
+        
+#         prevRows = self.generate(numRows - 1)
+#         newRow = [1] * numRows
+        
+#         for i in range(1, numRows - 1):
+#             newRow[i] = prevRows[-1][i - 1] + prevRows[-1][i]
+        
+#         prevRows.append(newRow)
+#         return prevRows
+
+
+####################################################67. Add Binary
+
+# a='1010'
+# b='1011'
+# c=''
+
+# if len(a)>len(b):
+#     for i in range(len(a)-len(b)):
+#         b='0'+b
+# else:
+#     for i in range (len(b)-len(a)):
+#         a='0'+ a
+
+
+# checker=0
+
+# for i in range(len(a)-1,-1,-1):
+#     d=0
+#     d=int(a[i])+int(b[i])+checker
+#     if d==2:
+#         checker=1
+#         d=0
+#         c=str(d)+c
+#     elif d==3:
+#         d=1
+#         c=str(d)+c
+#     elif d==1 or d==0:
+#         checker=0
+#         c=str(d)+c
+
+# if checker==1:
+#     c='1'+c
+
+# print(c)
+
+
+
+        
+
+
+
 
