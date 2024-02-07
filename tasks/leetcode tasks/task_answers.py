@@ -4075,9 +4075,58 @@
 # print(c)
 
 
+############################################################  Longest Common Prefix
 
-        
+# class Solution:
+#     def longestCommonPrefix(self, strs):
+#         minlen=float('inf') 
+#         word=''
+#         for i in strs:
+#             if len(i)<minlen:
+#                 minlen=len(i)
+#                 word=i
 
+#         a=word
+
+#         tests=[]
+#         b=0
+#         c=len(a)
+#         if len(strs)>1:
+#             for i in range(len(a)*2):
+#                 if b>=len(a):
+#                     test=a[:c]
+#                     c-=1
+#                 else:
+#                     test=a[b:len(a)]
+#                 b+=1
+#                 if all(i.startswith(test) for i in strs):
+#                     tests.append(test)
+
+#         else:
+#             tests.append(strs[0])
+#             return(tests[0])
+#         maxLen=0
+
+#         if len(tests)>0:
+#             if all(len(i)==1 for i in tests):
+#                 return(tests[-1])
+#             else:
+#               for j in tests:
+#                     if len(j)>maxLen:
+#                         maxLen=len(j)
+#                         tests=j
+#               return tests
+#         else:
+#             return('')
+                
+
+
+# print(Solution().longestCommonPrefix(["flower","flow","flight"]))
+# print(Solution().longestCommonPrefix(["dog","racecar","car"]))
+# print(Solution().longestCommonPrefix(["ab","a"]))
+# print(Solution().longestCommonPrefix(['a']))
+# print(Solution().longestCommonPrefix(["car","cir"]))
+# print(Solution().longestCommonPrefix(["abab","aba","abc"]))
 
 
 
