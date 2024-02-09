@@ -4130,3 +4130,32 @@
 
 
 
+###############################Array Partition I
+# nums=[1,3,4,2]
+
+# num=sorted(nums)
+# summer=0
+# for i in range(0,len(num),2):
+#     summer+=num[i]
+# print(summer)
+
+
+###############################Two Sum II - Input array is sorted
+numbers = [0,0,0,0,0,0,0,0,0,0,0,0,9,9,9,9,9,9,9,9,9,9,9,9,9,9]
+target = 5
+i = 1
+j = 0
+ourList=[]
+while j!=len(numbers)-1:
+    a=numbers[i]+numbers[j]
+    if a==target:
+        ourList.extend([j+1,i+1])
+    if len(numbers)-1==i:
+        j+=1
+        i=j
+    i+=1
+print(ourList)
+
+
+
+
