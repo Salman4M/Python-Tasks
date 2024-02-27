@@ -13,7 +13,7 @@
 
 # set3 = {12, 1, 1, 3, 5, 8}
 
-# print(set3)
+# # print(set3)
 
 
 
@@ -26,8 +26,8 @@
 # Operator and methods
 
 
-# x1 = {"coders", "azerbaijan"}
-# x2 = {"coders", "caravan"}
+x1 = {"coders", "azerbaijan"}
+x2 = {"coders", "caravan"}
 
 
 # 1) Union
@@ -46,7 +46,7 @@
 # # 3) Difference
 
 # print(x1 - x2)
-# # print(x1.difference(x2))
+# print(x1.difference(x2))
 
 
 # # # 4) Symmetric difference
@@ -60,10 +60,10 @@
 
 # # 5) Issubset, Issuperset
 
-# x3 = {12, 34, 56, 78} 
-# x4 = {12, 34}
-# x5 = {12, 34, 56, 78}
-# x6 = {12, 34, 90}
+x3 = {12, 34, 56, 78} 
+x4 = {12, 34}
+x5 = {12, 34, 56, 78}
+x6 = {12, 34, 90}
 
 # print(x3.issubset(x4))
 # print(x4.issubset(x3))
@@ -130,18 +130,18 @@
 
 myset = {'Fuad', 'coders', 'azerbaijan'}
 
-# # 1) Add methodu
+# # # 1) Add methodu
 
 
 myset.add('Samir')
-# # myset.add('Salman')
-print(myset)
+# # # myset.add('Salman')
+# print(myset)
 
 
 # # 2) Remove
 
 # myset.remove('Samir')
-# myset.remove('Samir')
+# # myset.remove('Samir')
 
 # print(myset)
 
@@ -150,7 +150,7 @@ print(myset)
 
 
 # myset.discard('Samir')
-# # # myset.discard('Samir')
+# myset.discard('Samir')
 
 # print(myset)
 
@@ -168,7 +168,7 @@ print(myset)
 
 # x = myset.pop()
 # myset.pop()
-# myset.pop()
+# # myset.pop()
 
 # print(myset)
 

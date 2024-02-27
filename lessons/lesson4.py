@@ -95,14 +95,16 @@ dict1 = {
 
 
 # print(dict1["Fuad"])
-# # print(dict1["Namiq"])
+# print(dict1["Namiq"])
 
 
 # value1 = dict1.get("Fuad")
 # print(value1)
 
 
-# value2 = dict1.get("Namiq", "coders")
+
+##if there are two keys inside of get method it will return  value of first key
+# value2 = dict1.get("Fuad", "Salman")
 # print(value2)
 
 
@@ -111,12 +113,11 @@ dict1 = {
 
 # # 3) update method
 
-
+# if the key that you set is not in the dictionary it'll added to end of dict as a new value and key
 # # dict1["Fuad"] = "994xxxxxxxx"
-# # dict1["Celal"] = "2348923478923874" 
+# dict1["Celal"] = "2348923478923874" 
 
 # print(dict1)
-
 
 
 
@@ -138,5 +139,3 @@ dict1 = {
 
 # print(dict3)
 
-# b= [1,2,3,4,5,5,5,5]
-# print(b.count(5))

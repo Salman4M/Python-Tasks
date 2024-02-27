@@ -1,7 +1,3 @@
-
-
-
-
 # for i in range(6):
 #     for j in range(i):
 #         print("*", end=" ")
@@ -76,26 +72,26 @@
 
 
 
-# # *a, b, c = 10, 20, 30, 40, 50
+# *a, b, c = 10, 20, 30, 40, 50
 
-# # print(a)
-# # print(b)
-# # print(c)
-
-
-
-# # def lower_text(text):
-# #     return text.lower().strip()
+# print(a)
+# print(b)
+# print(c)
 
 
-# # def check_lower_word(text1, text2):
-# #     return lower_text(text1) == lower_text(text2)
+
+def lower_text(text):
+    return text.lower().strip()
 
 
-# # word1 = "Coders"
-# # word2 = "coDeRs "
+def check_lower_word(text1, text2):
+    return lower_text(text1) == lower_text(text2)
 
-# # print(check_lower_word(word1, word2))
+
+word1 = "Coders"
+word2 = "coDeRs "
+
+print(check_lower_word(word1, word2))
 
 
 
@@ -110,22 +106,19 @@
 # Yuxaridaki neticeni almaq ucun funksiya yazin
 
 # """
-def myfunct(word):
-    return word.lower().replace(" ","")
+# def myfunct(word):
+#     return word.lower().replace(" ","")
 
-def myword(mytext):
-    for i in myfunct(mytext):
-        if i.isalpha() == True:
-            return i
-        else:
-            pass
+# def myword(mytext):
+#     b=''
+#     for i in myfunct(mytext):
+#         if i.isalpha() == True:
+#             b+=i
+#     return b
      
-funct = myword("Coders Azerbaijan: Say 'Hello World!'")
+# funct = myword("Coders Azerbaijan: Say 'Hello World!'")
 
-print(funct)
-
-
-
+# print(funct)
 
 
 
@@ -135,19 +128,27 @@ print(funct)
 #     * start ve end arasindaki ededlerin ededi ortasini qaytarmalidir
 
 # '''
-# startnum = int(input("my start num: "))
-# endnum =int(input("my end num: "))
+startnum = int(input("my start num: "))
+endnum =int(input("my end num: "))
 
-# def minus(startnum,endnum):
-#     if startnum < endnum:
-#         return -1
-# def average():
-#     for i in range(startnum,endnum):
-#         for j in mylist:
-#             print(j.append(i))
-# mylist=[]
-# fucnt1 = average()
-# print(fucnt1)
+mylist=[]
+
+
+def minus(startnum,endnum):
+    if startnum >= endnum:
+        return -1
+    for i in range(startnum,endnum):
+        mylist.append(i)
+    
+    
+func=minus(startnum,endnum)
+print(func)
+def average(first,last):
+    return sum(minus(first,last))/len(minus(first,last))
+
+            
+fucnt1 = average(startnum,endnum)
+print(fucnt1)
 
 
        
