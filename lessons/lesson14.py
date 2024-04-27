@@ -60,7 +60,9 @@ class CalculateNetProfit:
 
 
 
+obj=CalculateNetProfit(net_profit=400,tax=10,currency='USD')
 
+print(obj.get_salary())
 print(CalculateNetProfit.convert_usd_to_azn(100, "USD",10))
 print(CalculateNetProfit.convert_usd_to_azn(39, "AZN",10))
 

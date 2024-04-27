@@ -7,8 +7,9 @@
 
 # print(func1)
 
-# Recursive functions
-
+''
+"Recursive functions"
+''
 
 # def calc_for_range(n):
 #     sum = 0
@@ -25,13 +26,13 @@
 
 
 
-def calc_for_range(n):
-    return n + calc_for_range(n-1) if n > 1 else 0
+# def calc_for_range(n):
+#     return n + calc_for_range(n-1) if n > 1 else 0
 
 
-func1 = calc_for_range(4)
+# func1 = calc_for_range(4)
 
-print(func1)
+# print(func1)
 
 # Input: n=5
 
@@ -45,18 +46,38 @@ print(func1)
 
 
 
+'DECORATIVE FUNCTION'
+
+
+# def pretify_string(func):
+#     def capitalize_text(text):
+#         return text.lower().capitalize()
+#     return capitalize_text
+
+
+# # myfunc=pretify_string('Coders AZERbaijan')
+# # print(myfunc)
+
+
+# @pretify_string
+# def say_hello(text):
+#     return text
+
+# myfunc=say_hello('Coders AZERbaijan')
+# print(myfunc)
+
+
+
+###############################################
+
 
 # def pretify_string(func):
 
 
-#     def capitalize_text(*args, **kwargs):
-#         print(args)
-#         print(kwargs)
+#     def capitalize_text(text):
 
-
-#         text = kwargs.get("text")
 #         if type(text) != str:
-#             raise ValueError("Nagarsan  qadanalim")
+#             raise ValueError("Not string")
 #         return text.lower().capitalize()
 #         # return func(*args, **kwargs)
 
@@ -64,18 +85,46 @@ print(func1)
 #     return capitalize_text
 
 
-
-
-
 # @pretify_string
-# def say_hello(text, text2):
+# def say_hello(text):
 #     return text
 
+# myfunc=say_hello(7)
+# print(myfunc)
 
-# func1 = say_hello(text="azerbaijan", text2="coders")
 
 
-# # print(func1)
+'*args,**kwargs'
+
+def pretify_string(func):
+
+    def capitalize_text(*args, **kwargs):
+        # print(args)
+        print(kwargs)
+
+
+        text = kwargs.get("text")
+        if type(text) != str:
+            raise ValueError("Nagarsan  qadanalim")
+        return text.lower().capitalize()
+        # return func(*args, **kwargs)
+
+
+    return capitalize_text
+
+
+
+
+
+@pretify_string
+def say_hello(text, text2):
+    return text,text2
+
+
+func1 = say_hello(text="azerbaijan", text2="coders")
+
+
+print(func1)
 
 
 

@@ -46,15 +46,20 @@ fruits = ["alma", "armud", "heyva", "nar"]
 
 # a= [["baaa","caaa","daaa","eaaa","faaa"]]
 # a= ["baaa","caaa","daaa","eaaa","faaa"]
-a=(('baa','caaa','daa'),)
+# a=(('baa','caaa','daa'),)
 # fruits.extend(a)
-fruits.append(a)
+# fruits.append(a)
 
-# # fruits.extend(["kivi","pear"])
-# # # fruits.extend("kivi")
+# fruits.extend(["kivi","pear"])
 
 
-print(fruits)
+
+# fruits.extend("kivi")
+# '''
+# 'k','i','v','i'
+# '''
+
+# print(fruits)
 
 
 
@@ -69,19 +74,19 @@ print(fruits)
 
 # # remove methodu
 
-# # fruits.remove("alca")
+# fruits.remove("alca")
 # # fruits.remove("portagal")
 
-# # print(fruits)
+# print(fruits)
 
 
 # # del funksiya
 
-# # del fruits[-1]
+# del fruits[-1]
 # # del fruits[:3]
 # # del fruits
 
-# # print(fruits)
+# print(fruits)
 
 
 # # pop methodu
@@ -89,10 +94,11 @@ print(fruits)
 # print(fruits)
 
 # x = fruits.pop()
-# x = fruits.pop(0)
+# x = fruits.pop(3)
 
 # print(f"x: {x}, fruits: {fruits}")
-
+# print(x)
+# print(fruits)
 
 # # len funksiyasi
 
@@ -150,7 +156,7 @@ print(fruits)
 
 
 # tuple1 = ()
-# tuple2 = ('alma', 'armud', 'heyva', 'portagal')
+tuple2 = ('alma', 'armud', 'heyva', 'portagal')
 # # tuple3 = ('nar', )
 
 # # print(type(tuple1))
@@ -183,5 +189,6 @@ print(fruits)
 # list2 = list(tuple2)
 # list2.append('alca')
 
+# print(list2)
 # tuple2 = tuple(list2)
 

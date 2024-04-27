@@ -1,3 +1,5 @@
+'try except'
+
 # mydict = {
 #     "name": "Fuad"
 # }

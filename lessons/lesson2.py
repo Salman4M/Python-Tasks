@@ -13,8 +13,8 @@
 
 # Integer and Float
 
-# num1 = 10
-# num2 = 50
+num1 = 10
+num2 = 50
 # num3 = 7.5
 
 # print(num1 + num2)
@@ -146,14 +146,11 @@
 # False or False --> Falseor
 
 
-
-
 # print(not str1 == str2 and len(str1) == len(str2)) # --> True and True --> True
 
 
 # str1 = input("Birinci deyisken: ")
 # str2 = input("Ikinci deyisken: ")
-
 
 
 # print(
@@ -168,8 +165,8 @@
 # str1 = "Coders"
 # str2 = "Azerbaijan"
 
-# # str1 = str1 + str2
-# str1 += str2
+# str1 = str1 + str2
+# # str1 += str2
 
 # print(str1)
 
@@ -181,19 +178,17 @@
 # print(num2)
 
 
-
-
 # str1 = str2 = "Coders"
 # str1, str2 = "Coders", "Azerbaijan"
 
 # print(str1, str2)
 
 
-# # num1 = 10
+# num1 = 10
 # num2 = 10
 
 
-# # print(num1 == num2)
+# print(num1 == num2)
 # print(id(num1))
 # print(id(num2))
 # print(num1 is num2)

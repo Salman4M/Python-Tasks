@@ -73,10 +73,11 @@ text = "hello world"
 # 6) isalpha, isdigit or isnumeric, isalnum
 
 
-text1 = "salam"
-text2 = "123"
-text3 = "salam123"
-text4 = "salam123!"
+# text1 = "salam"
+# text2 = "123"
+# text3 = "salam123"
+# text4 = "salam123!"
+# text5= "3.4"
 
 
 ### isalpha
@@ -89,10 +90,12 @@ text4 = "salam123!"
 
 ### isnumeric
 
-print(text1.isnumeric())
-print(text2.isnumeric())
-print(text3.isnumeric())
-print(text4.isnumeric())
+# print(text1.isnumeric())
+# print(text2.isnumeric())
+# print(text3.isnumeric())
+# print(text4.isnumeric())
+# print(text5.isnumeric())
+
 
 
 ### isalnum
@@ -107,7 +110,11 @@ print(text4.isnumeric())
 # print(text2.isdigit())
 # print(text3.isdigit())
 # print(text4.isdigit())
+# print(text5.isdigit())
 
+
+'''The isdigit() method accepts only decimals, subscripts (X2), and superscripts(x2). 
+The isnumeric() function supports Digits, Vulgar Fractions (3/4 , 2/5), Subscripts, Superscripts, Roman Numerals, and Currency Numerators.'''
 
 # startswith, endswith
 
@@ -235,10 +242,10 @@ soz = "Salam Necesen"
 # # split
 
 
-# word100 = "Coders Azerbaijan AzerSalam"
+word100 = "Coders Azerbaijan AzerSalam"
 
 
-# # print(word100.split())
+# print(word100.split())
 # print(word100.split("Azer"))
 
 
@@ -254,26 +261,26 @@ surname = "Huseynov"
 
 # 2-ci yol (Kohne usul)
 
-# result = "Salam %s %s" %(name, surname)
+result = "Salam %s %s" %(name, surname)
 
-# print(result)
+print(result)
 
 
 # 3-cu yol (format methodu)
 
 
-# result = "Salam {} {}".format(name, surname)
-# result = "Salam {n} {sn}".format(sn=name, n=surname)
+result = "Salam {} {}".format(name, surname)
+result = "Salam {n} {sn}".format(sn=name, n=surname)
 
-# print(result)
+print(result)
 
 
 # 4-cu yol (f-stringler)
 
 
-# result = f"Salam {name} {surname}"
-# # result = f"Salam {12+13} {surname}"
-# op1 = f"{12} + {13} = {12+13}"
+result = f"Salam {name} {surname}"
+# result = f"Salam {12+13} {surname}"
+op1 = f"{12} + {13} = {12+13}"
 
-# # # print(result)
-# print(op1)
+print(result)
+print(op1)
