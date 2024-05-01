@@ -94,8 +94,8 @@ fruits = ["alma", "armud", "heyva", "nar"]
 # print(fruits)
 
 # x = fruits.pop()
-# x = fruits.pop(3)
-
+x = fruits.pop(2)
+print(fruits)
 # print(f"x: {x}, fruits: {fruits}")
 # print(x)
 # print(fruits)
@@ -156,7 +156,8 @@ fruits = ["alma", "armud", "heyva", "nar"]
 
 
 # tuple1 = ()
-tuple2 = ('alma', 'armud', 'heyva', 'portagal')
+# tuple2 = ('alma', 'armud', 'heyva', 'portagal')
+
 # # tuple3 = ('nar', )
 
 # # print(type(tuple1))

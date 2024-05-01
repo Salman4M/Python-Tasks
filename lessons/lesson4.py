@@ -9,13 +9,13 @@ list1 = [10, 20, 30, 40, 50]
 
 # print(list1)
 
+# if there is letter and number in the list you can't use sort method for the list 
+list2 = [10, 3, 'v',56,'a', 78, 23, 19]
+# list2=['f','g','a']
 
-# list2 = [10, 3, 56, 78, 23, 19]
+list2.sort()
 
-
-# list2.sort()
-
-# print(list2)
+print(list2)
 
 
 

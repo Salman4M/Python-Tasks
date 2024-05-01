@@ -140,10 +140,11 @@ myset.add('Samir')
 
 # # 2) Remove
 
-# myset.remove('Samir')
+myset.remove('Samir')
+
 # # myset.remove('Samir')
 
-# print(myset)
+print(myset)
 
 
 # # 3) Discard
