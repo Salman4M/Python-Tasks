@@ -33,11 +33,11 @@
 # m/n = x(x)
 # (n*x)+x = m
 
-# n = int(input("our n is: "))
+n = int(input("our n is: "))
 
-# for i in range(n,0,-1):
-#     if int(n % i) == int(n / i):
-#         print(i)
+for i in range(n,0,-1):
+    if int(n % i) == int(n / i):
+        print(i)
 
    
 
@@ -153,46 +153,82 @@
 
 
 # print(dict)
-sides=[]
+# sides=[]
 
-figure=input('type of figure: ')
+# figure=input('type of figure: ')
 
-if figure=='dordbucaqli':
-    for i in range(4):
-        side=int(input(f'side {i+1}: '))
-        if side!=0:
-          sides.append(side)
+# if figure=='dordbucaqli':
+#     for i in range(4):
+#         side=int(input(f'side {i+1}: '))
+#         if side!=0:
+#           sides.append(side)
 
-        else:
-           print("length or width can't be 0")
-           break
+#         else:
+#            print("length or width can't be 0")
+#            break
 
-elif figure == 'ucbucaqli':
-   for i in range(3):
-      side=int(input(f'side {i+1}: '))
-      if side!=0:
-        sides.append(side)
-      else:
-        print("length of side can't be 0")
-        break
+# elif figure == 'ucbucaqli':
+#    for i in range(3):
+#       side=int(input(f'side {i+1}: '))
+#       if side!=0:
+#         sides.append(side)
+#       else:
+#         print("length of side can't be 0")
+#         break
 
 
-if figure=='dordbucaqli':
-    if len(set(sides))==1:
-      print('this is Kvadrat')
-    elif len(set(sides))==2:
-       print('this is Duzbucaqli')
+# if figure=='dordbucaqli':
+#     if len(set(sides))==1:
+#       print('this is Kvadrat')
+#     elif len(set(sides))==2:
+#        print('this is Duzbucaqli')
 
-elif figure=='ucbucaqli':
-    if len(set(sides))==1:
-       print('beraberterefli')
-    elif len(set(sides))==2:
-       print('beraberyanli')
-    else:
-       print('ucbucaq')
+# elif figure=='ucbucaqli':
+#     if len(set(sides))==1:
+#        print('beraberterefli')
+#     elif len(set(sides))==2:
+#        print('beraberyanli')
+#     else:
+#        print('ucbucaq')
   
 
 
+# Daxil edilmiş cümlənin bütün sözlərini alfabetik düzülüşlü sözlərə çevirib nəticəni çap edin. Misal üçün ."sabahin xeyir".    Bu şəkildə olacaq  : "abhins exiry"    . Hər bir sözdəki hərflər alfabetik sırasına görə düzüldü. 
+
+# a='sabahin xeyir hocam'
+
+# b=[]
+# c=[]
+
+# for i in a:
+#    if i!=' ':
+#       c+=i
+#       # break
+#    else:
+#       c.sort()
+#       b.append(c)
+#       # print(c)
+#       c=[]
+
+# if c:
+#    c.sort()
+#    b.append(c)
+
+
+# print(b)
+# words=''
+# for i in range(len(b)):
+#    for ind,val in enumerate(b[i]):
+#       if ind==0 and i!=0:
+#          words+=' '
+#       words+=val
+
+
+# print(words)
+   
+
+
+      
 
 
 

@@ -38,8 +38,7 @@
 
 """
 @staticmethod  
-
-# """
+"""
 class CalculateNetProfit:
 
     def __init__(self, net_profit, tax, currency):
@@ -59,10 +58,13 @@ class CalculateNetProfit:
             net_profit=self.net_profit, currency=self.currency ,tax = self.tax) - self.tax
 
 
-
+###classın içərisində normal qaydada istifadə edirik
 obj=CalculateNetProfit(net_profit=400,tax=10,currency='USD')
 
 print(obj.get_salary())
+
+
+###### classdan kənarda isə static metodumuzun adı və dəyərləri
 print(CalculateNetProfit.convert_usd_to_azn(100, "USD",10))
 print(CalculateNetProfit.convert_usd_to_azn(39, "AZN",10))
 

@@ -26,17 +26,17 @@ myobj = Dunder(name = "Salman", surname="Mammadli", age = 22, university="UNEC",
 # myobj._university = "ADNSU"
 # print(myobj._university)
 # print(myobj._displayUniversity())
-
+# myobj.__password='salam'
 ############## we can't call private member outside of class
-print(myobj.__password)
+# print(myobj.__password)
 
 #######only inside of class
-# print(myobj.displayPassword())
+print(myobj.displayPassword())
 
 
 
 # # #name mangling
-
+# by this method (name mangling) we can see the value of private member 
 # print(vars(myobj))
 
 
@@ -100,11 +100,11 @@ class Person:
     #     fget=get_password
     # )
     @password.setter
-    def password(self,x):
+    def set_password(self,x):
         self.__password = x
 
 player1  = Person(username = 'salman4m', password = 'italy123')
 
-player1.password="venice123"
+player1.set_password="venice123"
 print(player1.password)
 

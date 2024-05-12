@@ -2,27 +2,32 @@
 "classlarda inheritance"
 
 
-# class Animal:
+class Animal:
 
-#     def __init__(self, name, color):
-#         self.name = name
-#         self.color = color
+    def __init__(self, name, color):
+        self.name = name
+        self.color = color
     
-#     def makeSound(self):
-#         return "Nothing"
+    def makeSound(self):
+        return "Nothing"
 
 
-# class Cat(Animal):
-#     ...
+class Cat(Animal):
+    ...
 
-#     def __init__(self, name, color, gender):
-#         super().__init__(name=name, color=color)
-#         self.gender = gender
+    def __init__(self, name, color, gender):
+        super().__init__(name=name, color=color)
+        self.gender = gender
     
-#     def makeSound(self):
-#         return "Miao"
+    def makeSound(self):
+        return f"{self.name}--{self.color}---{self.gender}---Miao"
 
+animal=Animal('monkey','brown')
+cat1=Cat(animal.name,animal.color,'it')
 
+print(cat1.makeSound())
+
+# cat1=Cat()
 # class Wild:
 
 #     def __init__(self, kill_count, area):
@@ -37,6 +42,7 @@
 #         self.kill_count = kill_count
 #         self.area = area
 #         self.age = age
+
 
 
 # cat2 = BengalCat(name="Yuri", color="sari", gender="others", kill_count=30 , area="Samaxi", age=40)
@@ -62,12 +68,12 @@
 # print(func1)
 
 
-def myfunc(n):
-  return lambda a : a * n
+# def myfunc(n):
+#   return lambda a : a * n
 
-mydoubler = myfunc(2)
+# mydoubler = myfunc(2)
 
-print(mydoubler(11))
+# print(mydoubler(11))
 
 """
 TASK 1:
