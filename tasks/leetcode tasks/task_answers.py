@@ -4199,4 +4199,33 @@
      
 
 
+# 2657. Find the Prefix Common Array of Two Arrays
 
+A = [1,3,2,4]
+B = [3,1,2,4]
+
+
+# A = [2,3,1]
+# B = [3,1,2]
+
+
+class Solution:
+	def findThePrefixCommonArray(self, A, B):
+		right=1
+		mylist=[]
+		while right<len(A)+1:
+
+			a=set(A[:right]) & set(B[:right])
+			mylist.append(len(a))
+			right+=1
+
+		return mylist
+
+
+obj =Solution()
+print(obj.findThePrefixCommonArray(A,B))
+
+
+
+
+    
