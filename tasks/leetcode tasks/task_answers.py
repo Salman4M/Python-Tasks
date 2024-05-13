@@ -4201,31 +4201,55 @@
 
 # 2657. Find the Prefix Common Array of Two Arrays
 
-A = [1,3,2,4]
-B = [3,1,2,4]
+# A = [1,3,2,4]
+# B = [3,1,2,4]
 
 
-# A = [2,3,1]
-# B = [3,1,2]
+# # A = [2,3,1]
+# # B = [3,1,2]
 
 
-class Solution:
-	def findThePrefixCommonArray(self, A, B):
-		right=1
-		mylist=[]
-		while right<len(A)+1:
+# class Solution:
+# 	def findThePrefixCommonArray(self, A, B):
+# 		right=1
+# 		mylist=[]
+# 		while right<len(A)+1:
 
-			a=set(A[:right]) & set(B[:right])
-			mylist.append(len(a))
-			right+=1
+# 			a=set(A[:right]) & set(B[:right])
+# 			mylist.append(len(a))
+# 			right+=1
 
-		return mylist
-
-
-obj =Solution()
-print(obj.findThePrefixCommonArray(A,B))
+# 		return mylist
 
 
+# obj =Solution()
+# print(obj.findThePrefixCommonArray(A,B))
 
+
+
+
+
+#4. Median of Two Sorted Arrays
+
+# class Solution:
+# 	def findMedianSortedArrays(self, nums1, nums2):
+# 		b=sorted(nums1+nums2)
+# 		print(b)
+# 		a=len(nums1+nums2)
+
+# 		if a%2!=0:
+# 			return b[a//2]
+			
+		
+# 		return(b[a//2]+b[(a//2)-1])/2
+
+# nums1 = [1,2]
+# nums2 = [3,4]
+
+# obj=Solution()
+# print(obj.findMedianSortedArrays(nums1,nums2))
+    
 
     
+    
+
