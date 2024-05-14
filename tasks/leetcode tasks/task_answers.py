@@ -2341,12 +2341,11 @@
 # # nums = [3,2,3]
 # # nums = [3,3,4]
 # # nums = [2,2,1,1,1,2,2]
-# # c= 0
-# # check = True
-# # for i in set(nums):
-# #     if nums.count(i)> len(nums)/2:
-# #         c=i
-# # print(c)    
+# class Solution:
+#     def majorityElement(self, nums):
+#         for i in set(nums):
+#             if nums.count(i)>len(nums)/2:
+#                 return i
 
 
 # # 1351. Count Negative Numbers in a Sorted Matrix
@@ -4251,5 +4250,69 @@
     
 
     
+# 88. Merge Sorted Array
+
+# nums1 = [0]
+# m = 0
+# nums2 = [1]
+# n = 1
+
+
+# nums1 = [1,2,3,0,0,0]
+# m = 3
+# nums2 = [2,5,6]
+# n = 3
+
+
+# class Solution:
+#     def merge(self, nums1, m, nums2, n):
+#         del nums1[m:]
+#         del nums2[n:]
+#         nums1.extend(nums2)
+#         nums1.sort()
+#         return nums1
+
+# myobj=Solution()
+# print(myobj.merge(nums1,m,nums2,n))
+
+
+
+
+
+# 80. Remove Duplicates from Sorted Array II
+# nums=[1,1,1,2,2,3,3]
+# class Solution:
+#     def removeDuplicates(self, nums):
+#         for i in sorted(nums):
+#             if nums.count(i)>2:
+#                 nums.remove(i)
+
+#         return len(nums)
+
+
+k=3
+nums = [1,2,3,4,5,6,7]
+# nums = [-1,-100,3,99]
+# k = 2
+b=nums[:len(nums)-k]
+a=nums[-k:]
+
+print(a)
+print(b)
+
+a.extend(b)
+print(a)
+
+
+# class Solution:
+#     def rotate(self, nums, k):
+#         b=nums[:len(nums)-k]
+#         a=nums[-k:]
+#         a.extend(b)
+
+#         return a
     
 
+# myobj=Solution()
+
+# print(myobj.rotate(nums,k))
