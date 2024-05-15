@@ -4290,18 +4290,33 @@
 #         return len(nums)
 
 
+# 189. Rotate Array
+
 k=3
 nums = [1,2,3,4,5,6,7]
 # nums = [-1,-100,3,99]
 # k = 2
-b=nums[:len(nums)-k]
-a=nums[-k:]
+for i in range(len(nums)-1,len(nums)-3-1,-1):
+    nums.insert(0,nums[i])
+    # nums.remove(nums[-1])
+    print(f'inserted: {nums}',nums[i])
+    
 
-print(a)
-print(b)
 
-a.extend(b)
-print(a)
+
+    # nums.remove(nums[-1])
+
+    # print(nums)
+
+
+# b=nums[:len(nums)-k]
+# a=nums[-k:]
+
+# print(a)
+# print(b)
+
+# a.extend(b)
+# print(a)
 
 
 # class Solution:
