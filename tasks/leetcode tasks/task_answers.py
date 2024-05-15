@@ -4292,42 +4292,22 @@
 
 # 189. Rotate Array
 
+#first solution
+
+class Solution:
+    def rotate(self, nums, k):
+        nums.reverse()
+
+        for i in range(k):
+            nums.append(nums[0])
+            nums.remove(nums[0])
+        nums.reverse()
+
+        return nums
+
 k=3
 nums = [1,2,3,4,5,6,7]
-# nums = [-1,-100,3,99]
-# k = 2
-for i in range(len(nums)-1,len(nums)-3-1,-1):
-    nums.insert(0,nums[i])
-    # nums.remove(nums[-1])
-    print(f'inserted: {nums}',nums[i])
-    
 
+obj=Solution()
+print(obj.rotate())
 
-
-    # nums.remove(nums[-1])
-
-    # print(nums)
-
-
-# b=nums[:len(nums)-k]
-# a=nums[-k:]
-
-# print(a)
-# print(b)
-
-# a.extend(b)
-# print(a)
-
-
-# class Solution:
-#     def rotate(self, nums, k):
-#         b=nums[:len(nums)-k]
-#         a=nums[-k:]
-#         a.extend(b)
-
-#         return a
-    
-
-# myobj=Solution()
-
-# print(myobj.rotate(nums,k))
