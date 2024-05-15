@@ -4307,7 +4307,12 @@ class Solution:
 
 k=3
 nums = [1,2,3,4,5,6,7]
+nums = [-1,-100,3,99]
+nums=[1,2]
+k = 5
 
-obj=Solution()
-print(obj.rotate())
+
+# obj=Solution()
+# print(obj.rotate())
+
 
