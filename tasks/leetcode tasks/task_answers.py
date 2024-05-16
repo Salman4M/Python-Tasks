@@ -2156,25 +2156,6 @@
 # # print(myojb.longestCommonPrefix())
 
 
-
-# # 121. Best Time to Buy and Sell Stock
-
-# # prices = [7,1,5,3,6,4]
-# # prices = [7,6,4,3,1]
-# # a = []
-# # for i in range(len(prices)):
-# #     for j in range(i+1,len(prices)):
-# #             a.append(prices[j]-prices[i])
-
-# # for d in range(len(a)):
-# #       if a[d]>0:
-# #             print(max(a))
-# #             break
-# # else:
-# #       print(0)
-
-# # print((a))
-
 # # class Solution:
 # #       def __init__(self,prices):
 # #             self.prices = prices
@@ -4294,25 +4275,99 @@
 
 #first solution
 
-class Solution:
-    def rotate(self, nums, k):
-        nums.reverse()
+# class Solution:
+#     def rotate(self, nums, k):
+#         nums.reverse()
 
-        for i in range(k):
-            nums.append(nums[0])
-            nums.remove(nums[0])
-        nums.reverse()
+#         for i in range(k):
+#             nums.append(nums[0])
+#             nums.remove(nums[0])
+#         nums.reverse()
 
-        return nums
+#         return nums
 
-k=3
-nums = [1,2,3,4,5,6,7]
-nums = [-1,-100,3,99]
-nums=[1,2]
-k = 5
+# k=3
+# nums = [1,2,3,4,5,6,7]
+# nums = [-1,-100,3,99]
+# nums=[1,2]
+# k = 5
 
 
 # obj=Solution()
 # print(obj.rotate())
+
+
+
+
+#121. Best Time to Buy and Sell Stock (not solved yet)
+
+prices = [7,1,5,3,6,4]
+prices=[1,2,3,4,5,6]
+# prices = [7,6,4,3,1]
+# prices=[6,1,3,2,4,7]
+# prices=[1,2,4]
+profits=[]
+
+maximumProfit=0
+minimumProfit=prices[0]
+
+for i in prices[1:]:
+    if i<minimumProfit:
+        minimumProfit=i
+    
+    else:
+        price=i-minimumProfit
+        print(i,minimumProfit)
+        profits.append(price)
+        if price>maximumProfit:
+            maximumProfit=price
+            minimumProfit=i
+
+a=0
+
+
+print(profits)
+
+if len(profits)>=2 and len(prices)/2>=len(profits):
+    for i in range(len(profits)-1):
+        a+=max(profits)
+        profits.remove(max(profits))
+
+elif (len(profits))==1:
+    a+=max(profits)
+
+
+
+
+print(a)
+
+
+# class Solution:
+#     def maxProfit(self, prices):
+#         maximumProfit=0
+#         minimumProfit=prices[0]
+
+#         for i in prices[1:]:
+#             if i<minimumProfit:
+#                 minimumProfit=i
+            
+#             else:
+#                 price=i-minimumProfit
+#                 if price>maximumProfit:
+#                     maximumProfit=price
+
+#         return maximumProfit
+
+
+# myobj=Solution()
+
+# print(myobj.maxProfit(prices))       
+
+#122. Best Time to Buy and Sell Stock II
+
+
+
+
+
 
 
