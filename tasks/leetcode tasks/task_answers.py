@@ -2562,23 +2562,6 @@
 # #             print(True)
 
 
-# # 55. Jump Game
-
-
-# # nums = [3,2,1,0,4]
-# # nums = [1]
-# # nums = [2,0]
-# # nums = [1,2,3]
-# # for ind,val in enumerate(nums):
-# #     if 1<ind+val<len(nums) and len(nums)>1:
-# #         if nums[ind+val]==nums[-1]:
-# #             print(True)
-# #     elif val>len(nums)-1 or val ==0:
-# #         print(True)
-
-
-
-
 # # d= []
 
 # # footsteps = ['r','r','r','r','l','l','l','l','r','r']
@@ -4364,6 +4347,73 @@
 
 
 
+# # 55. Jump Game (not solved again)
 
 
 
+index=0
+# for i in range(1000):
+#     number=nums[index]
+#     print(number)
+#     if number==0 and index!=len(nums)-1:
+#         print(False)
+#         break
+#     elif number>0:
+#         index=index+number
+#         if index>=len(nums)-1:
+#             print(True)
+#         else:
+#             number=nums[index]
+
+
+
+nums = [3,2,1,0,4]
+nums = [2,5,0,0]
+nums = [1,2,0,1]
+
+# nums = [2]
+
+nums = [2,0]
+# nums = [1,2,3]
+index=0
+nums = [6,2,1,5,7,0,0,0,0,0]
+step=nums[0]
+
+# nums = [3,2,1,0,4]
+
+
+number=nums[index]
+
+for i in range(len(nums)-3):
+
+    if step==0 or len(nums)==1:
+        print(True)
+    # elif number>
+    if number>nums[index+1]:
+        # print(nums[index+1])
+        step-=1
+        index+=1
+
+        if step<nums[index+1]:
+            number=nums[index+1]
+            step=number
+            index+=1
+
+    elif number<nums[index+1]:
+        number=nums[index+1]
+        step=number
+        index+=1
+
+    print(number)
+        # if step==number and nums[step]==0 and step<len(nums)-1:
+        #     print(False)
+        # elif step==number and nums[step]>0 and step<len(nums)-1:
+            # index=
+
+
+# elif number<=nums[index+1]:
+#     number=nums[index+1]
+#     step=0
+
+
+    
