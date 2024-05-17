@@ -4299,49 +4299,15 @@
 
 
 
-#121. Best Time to Buy and Sell Stock (not solved yet)
-
-prices = [7,1,5,3,6,4]
-prices=[1,2,3,4,5,6]
-# prices = [7,6,4,3,1]
-# prices=[6,1,3,2,4,7]
-# prices=[1,2,4]
-profits=[]
-
-maximumProfit=0
-minimumProfit=prices[0]
-
-for i in prices[1:]:
-    if i<minimumProfit:
-        minimumProfit=i
-    
-    else:
-        price=i-minimumProfit
-        print(i,minimumProfit)
-        profits.append(price)
-        if price>maximumProfit:
-            maximumProfit=price
-            minimumProfit=i
-
-a=0
+#121. Best Time to Buy and Sell Stock
 
 
-print(profits)
-
-if len(profits)>=2 and len(prices)/2>=len(profits):
-    for i in range(len(profits)-1):
-        a+=max(profits)
-        profits.remove(max(profits))
-
-elif (len(profits))==1:
-    a+=max(profits)
-
-
-
-
-print(a)
-
-
+# class Solution:
+# prices = [7,1,5,3,6,4]
+# # prices=[1,2,3,4,5,6]
+# # prices = [7,6,4,3,1]
+# # prices=[6,1,3,2,4,7]
+# # prices=[1,2,4]
 # class Solution:
 #     def maxProfit(self, prices):
 #         maximumProfit=0
@@ -4355,6 +4321,7 @@ print(a)
 #                 price=i-minimumProfit
 #                 if price>maximumProfit:
 #                     maximumProfit=price
+#                     print(i,minimumProfit)
 
 #         return maximumProfit
 
@@ -4363,7 +4330,36 @@ print(a)
 
 # print(myobj.maxProfit(prices))       
 
-#122. Best Time to Buy and Sell Stock II
+
+#122. Best Time to Buy and Sell Stock II (solved medium task)
+# prices = [1,4,2,6,3,9]  #(1,4),(2,6),(3,9) = 0-1+4-2+6-3+9=13
+# prices = [6,1,3,4,6,9]  #(1,9) = 0-1+9=8
+# prices=[1,2,3,4,5,6]    #(1,6) = 0-1+6=5
+# prices = [7,6,4,3,1]
+# prices=[6,1,3,2,4,7]
+# prices=[1,2,4]
+# prices=[1,2]
+# prices = [7,1,5,3,6,4]  #(1,5),(3,6) = 0-1+5-3+6=7
+# class Solution:
+#     def maxProfit(self, prices):
+#         profits=[]
+#         maximumProfit=0
+#         minimumProfit=prices[0]
+#         for i in prices[1:]:
+#             if i<minimumProfit:
+#                 minimumProfit=i
+            
+#             else:
+#                 price=i-minimumProfit
+#                 profits.append(price)
+#                 maximumProfit=price
+#                 minimumProfit=i
+#         return sum(profits)
+
+
+
+# obj=Solution()
+# print(obj.maxProfit(prices))
 
 
 
