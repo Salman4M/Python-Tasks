@@ -356,38 +356,6 @@
 
 # # # print(manumb)
 
-# # # 506. Relative Ranks
-
-# # # score = [10,3,8,9,4]
-# # # score.sort()
-# # # # score.reverse()
-
-# # # print(score)
-
-# # # b = score[::-1]
-
-# # # # print(b)
-
-
-# # # # Output: ["Gold Medal","5","Bronze Medal","Silver Medal","4"]
-# # # # Explanation: The placements are [1st, 5th, 3rd, 2nd, 4th].
-    
-# # # placeup = ["Gold Medal", "Silver Medal","Bronze Medal"]
-# # # underplace = {}
-
-# # # for i in range(5):
-# # #     score.sort()
-# # #     if i <= 2:
-# # #         if b[i] not in underplace.keys():
-# # #             if placeup[i] not in underplace.values():
-# # #                 underplace[b[i]]=placeup[i]
-# # #     elif i>=3 and not i > 4:
-# # #         int(i)
-
-
-
-# # # print(underplace)
-
 
 # # # 747. Largest Number At Least Twice of Others
 
@@ -2562,23 +2530,6 @@
 # #             print(True)
 
 
-# # 55. Jump Game
-
-
-# # nums = [3,2,1,0,4]
-# # nums = [1]
-# # nums = [2,0]
-# # nums = [1,2,3]
-# # for ind,val in enumerate(nums):
-# #     if 1<ind+val<len(nums) and len(nums)>1:
-# #         if nums[ind+val]==nums[-1]:
-# #             print(True)
-# #     elif val>len(nums)-1 or val ==0:
-# #         print(True)
-
-
-
-
 # # d= []
 
 # # footsteps = ['r','r','r','r','l','l','l','l','r','r']
@@ -4299,49 +4250,15 @@
 
 
 
-#121. Best Time to Buy and Sell Stock (not solved yet)
-
-prices = [7,1,5,3,6,4]
-prices=[1,2,3,4,5,6]
-# prices = [7,6,4,3,1]
-# prices=[6,1,3,2,4,7]
-# prices=[1,2,4]
-profits=[]
-
-maximumProfit=0
-minimumProfit=prices[0]
-
-for i in prices[1:]:
-    if i<minimumProfit:
-        minimumProfit=i
-    
-    else:
-        price=i-minimumProfit
-        print(i,minimumProfit)
-        profits.append(price)
-        if price>maximumProfit:
-            maximumProfit=price
-            minimumProfit=i
-
-a=0
+#121. Best Time to Buy and Sell Stock
 
 
-print(profits)
-
-if len(profits)>=2 and len(prices)/2>=len(profits):
-    for i in range(len(profits)-1):
-        a+=max(profits)
-        profits.remove(max(profits))
-
-elif (len(profits))==1:
-    a+=max(profits)
-
-
-
-
-print(a)
-
-
+# class Solution:
+# prices = [7,1,5,3,6,4]
+# # prices=[1,2,3,4,5,6]
+# # prices = [7,6,4,3,1]
+# # prices=[6,1,3,2,4,7]
+# # prices=[1,2,4]
 # class Solution:
 #     def maxProfit(self, prices):
 #         maximumProfit=0
@@ -4355,6 +4272,7 @@ print(a)
 #                 price=i-minimumProfit
 #                 if price>maximumProfit:
 #                     maximumProfit=price
+#                     print(i,minimumProfit)
 
 #         return maximumProfit
 
@@ -4363,7 +4281,96 @@ print(a)
 
 # print(myobj.maxProfit(prices))       
 
-#122. Best Time to Buy and Sell Stock II
+
+#122. Best Time to Buy and Sell Stock II (solved medium task)
+# prices = [1,4,2,6,3,9]  #(1,4),(2,6),(3,9) = 0-1+4-2+6-3+9=13
+# prices = [6,1,3,4,6,9]  #(1,9) = 0-1+9=8
+# prices=[1,2,3,4,5,6]    #(1,6) = 0-1+6=5
+# prices = [7,6,4,3,1]
+# prices=[6,1,3,2,4,7]
+# prices=[1,2,4]
+# prices=[1,2]
+# prices = [7,1,5,3,6,4]  #(1,5),(3,6) = 0-1+5-3+6=7
+# class Solution:
+#     def maxProfit(self, prices):
+#         profits=[]
+#         maximumProfit=0
+#         minimumProfit=prices[0]
+#         for i in prices[1:]:
+#             if i<minimumProfit:
+#                 minimumProfit=i
+            
+#             else:
+#                 price=i-minimumProfit
+#                 profits.append(price)
+#                 maximumProfit=price
+#                 minimumProfit=i
+#         return sum(profits)
+
+
+
+# obj=Solution()
+# print(obj.maxProfit(prices))
+
+
+
+# 506. Relative Ranks
+
+score = [8,3,4,5,1]
+#my solution
+class Solution:
+    def findRelativeRanks(self, score):
+        them=list(reversed(sorted(score)))
+        medals=['Gold Medal','Silver Medal','Bronze Medal','4','5']
+        mydict={val:medals[ind] for ind,val in enumerate(them)}
+
+        return [mydict[i]for i in score]
+
+
+
+# # 55. Jump Game (not solved again)
+
+nums=[7,2,4,1,3,2,0,0,1]
+# nums=[2,3,1,8,0,0,4]
+nums=[3,2,1,1,4]
+left=0
+counter=nums[left]-1
+right=1
+
+nums=[0,1]
+if len(nums)>1:
+     while left<right:
+               if right==len(nums)-1 and nums[left]>0:
+                    print(True)          
+                    break
+
+               elif (counter==0 and nums[right]==0 and right<len(nums)-1) or nums[left]==0:
+                         print(False)
+                         break
+                    
+               elif counter==0 and nums[right]>0 and right<len(nums)-1:
+                         left=right
+                         right=left+1
+                         counter=nums[left]-1
+
+               elif nums[left]and nums[left]<=nums[right] or counter<=nums[right]:
+                    print(f'before: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left}')
+                    left=right # yeni left index
+                    right=left+1 # yeni right index
+                    counter=nums[left]-1
+                    print(f'after: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left}')
+                         
+               elif nums[left]>nums[right]:
+                    print(f'in elif before: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left}')
+                    right+=1
+                    counter-=1
+                    print(f'in elif after: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left}')
+else:
+      print(True)
+
+
+
+          
 
 
 
