@@ -4365,64 +4365,89 @@ class Solution:
 
 #         else:
 #             return True
-        
 
-#  45. Jump Game II (medium)
-nums=[7,2,4,1,3,2,4,0,1]
-# nums=[2,3,1,8,0,0,4]
-nums=[3,2,1,1,4]
+
+#### better solution
+
+# class Solution:
+#     def canJump(self, nums):
+#         gas=0
+#         for ind,val in enumerate(nums):
+#             if gas<0:
+#                 return False
+#             elif val>gas:
+#                 gas=val
+#             gas-=1
+#         return True
+
+#  45. Jump Game II
+# nums=[7,2,4,1,3,2,4,0,1]
+nums=[2,3,1,8,0,0,0,0,0,0,4]
+nums=[2,3,1,1,4]
 # nums=[0,1]
-nums = [2,3,1]
+# nums = [2,3,1]
 nums=[1,2,3,4]
-left=0
-counter=nums[left]-1
-right=1
-minimumStep=1
-if len(nums)>1:
-     while left<right:
-          if right==len(nums)-1 and nums[left]>0:
-               # print (True)          
-               break
-          elif nums[left]>=len(nums)-1:
-                minimumStep=1
-                break
+# nums=[3,2,1,1,4]
 
-          elif (counter==0 and nums[right]==0 and right<len(nums)-1) or nums[left]==0:
-                    minimumStep=0
-                    # print(False)
-                    break
+myobj=Solution()
+print(myobj.canJump(nums))
+
+# left=0
+# counter=nums[left]-1
+# right=1
+# minimumStep=0
+# if len(nums)>1:
+#      while left<right:
+#           if right==len(nums)-1 and nums[left]>0:
+#                # print (True)          
+#                break
+
+#           elif left==0 and nums[left]>=len(nums[left+1:]):
+#                 minimumStep=1
+#                 break
+          
+#           elif left>0 and nums[left]>=len(nums)-len(nums[left+1:]):
+#                 minimumStep+=1
+#                 print(minimumStep)
+#                 break
+          
+#           elif counter+left>=len(nums)-1:
+#                 break
+
+#           elif (counter==0 and nums[right]==0 and right<len(nums)-1) or nums[left]==0:
+#                     minimumStep=0
+#                     # print(False)
+#                     break
                               
-          elif counter==0 and nums[right]>0 and right<len(nums)-1:
-                    print(f'in the middle before: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
+#           elif counter==0 and nums[right]>0 and right<len(nums)-1:
+#                     print(f'in the middle before: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
 
-                    left=right
-                    right=left+1
-                    counter=nums[left]-1
-                    minimumStep+=1
-                    print(f'in the middle after: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
+#                     left=right
+#                     right=left+1
+#                     counter=nums[left]-1
+#                     if left==len(nums)-2:
+#                          minimumStep+=1
+#                     print(f'in the middle after: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
 
-          elif nums[left]<=nums[right]  or counter<nums[right]:
-               print(f'before: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
-               left=right # yeni left index
-               right=left+1 # yeni right index
-               counter=nums[left]-1
-               minimumStep+=1
-               print(f'after: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
+#           elif nums[left]<=nums[right]  or counter<nums[right]:
+#                print(f'before: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
+#                left=right # yeni left index
+#                right=left+1 # yeni right index
+#                counter=nums[left]-1
+#                minimumStep+=1
+#                print(f'after: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
 
                          
-          elif nums[left]>nums[right]:
-               print(f'elif before: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
-               right+=1
-               counter-=1
-               print(f'elif after: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
+#           elif nums[left]>nums[right]:
+#                print(f'elif before: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
+#                right+=1
+#                counter-=1
+#                print(f'elif after: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
 
-else:
-     minimumStep=1
-
-
+# else:
+#      minimumStep=1
           
-
-print(minimumStep)
+# print(minimumStep)
 
 
 
