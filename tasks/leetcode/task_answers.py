@@ -4368,88 +4368,98 @@ class Solution:
 
 
 #### better solution
+class Solution:
+    def canJump(self, nums):
+        counter=0
+        limit=0
+        for ind,val in enumerate(nums):
+            if limit<0 or len(nums)==1:
+                return counter
+            elif val>limit:
+                limit=val
+                if ind+limit>=len(nums)-1:
+                    counter+=1
+                    break
+                else:
+                    counter+=1
+            limit-=1
+
+        return counter
+
+#  45. Jump Game II (not solved unfortunately)
+
 
 # class Solution:
-#     def canJump(self, nums):
-#         gas=0
+#     def jump(self, nums):
+#         counter=0
+#         limit=0
 #         for ind,val in enumerate(nums):
-#             if gas<0:
-#                 return False
-#             elif val>gas:
-#                 gas=val
-#             gas-=1
-#         return True
+#             if limit<0 or len(nums)==1:
+#                 return counter
+#             elif val>limit:
+#                 limit=val
+#                 if ind+limit>=len(nums)-1:
+#                     counter+=1
+#                     print(f'first elif if{counter}')
+#                     break
+#                 elif nums[ind+limit]+ind+limit>=len(nums)-1:
+#                     counter+=2
+#                     print(f'first elif elif{counter}')
 
-#  45. Jump Game II
-# nums=[7,2,4,1,3,2,4,0,1]
-nums=[2,3,1,8,0,0,0,0,0,0,4]
-nums=[2,3,1,1,4]
+#                     break
+#                 else:
+#                     counter+=1
+#                     print(f'else{counter}')
+
+#             limit-=1
+
+#         return counter
+    
+
+# nums=[7,0,9,6,9,6,1,8,9,0,1,2,9,0,7]
+
+# nums=[7,2,4,1,3,2,4,0]
+# nums=[2,3,1,5,0,0,0,0,4]
+# nums=[2,3,1,1,4]
 # nums=[0,1]
 # nums = [2,3,1]
-nums=[1,2,3,4]
+# nums=[1,2,3,4]
 # nums=[3,2,1,1,4]
+# nums=[1]
+# # nums=[7,0,9,6,9,6,1,8,9,0,1,2,9,0,7,9]
+# nums=[1,1,1,1]
 
-myobj=Solution()
-print(myobj.canJump(nums))
+# myobj=Solution()
+# print(myobj.jump(nums))
 
-# left=0
-# counter=nums[left]-1
-# right=1
-# minimumStep=0
-# if len(nums)>1:
-#      while left<right:
-#           if right==len(nums)-1 and nums[left]>0:
-#                # print (True)          
-#                break
 
-#           elif left==0 and nums[left]>=len(nums[left+1:]):
-#                 minimumStep=1
-#                 break
-          
-#           elif left>0 and nums[left]>=len(nums)-len(nums[left+1:]):
-#                 minimumStep+=1
-#                 print(minimumStep)
-#                 break
-          
-#           elif counter+left>=len(nums)-1:
-#                 break
 
-#           elif (counter==0 and nums[right]==0 and right<len(nums)-1) or nums[left]==0:
-#                     minimumStep=0
-#                     # print(False)
-#                     break
-                              
-#           elif counter==0 and nums[right]>0 and right<len(nums)-1:
-#                     print(f'in the middle before: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
+#274. H-Index
 
-#                     left=right
-#                     right=left+1
-#                     counter=nums[left]-1
-#                     if left==len(nums)-2:
-#                          minimumStep+=1
-#                     print(f'in the middle after: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
+### count of citat in a page has to be equal to page
+## if there is 3 citat in a page, there have to be another 2 page to have at least 3 citat to be h-index
 
-#           elif nums[left]<=nums[right]  or counter<nums[right]:
-#                print(f'before: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
-#                left=right # yeni left index
-#                right=left+1 # yeni right index
-#                counter=nums[left]-1
-#                minimumStep+=1
-#                print(f'after: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
+citations = [6,5,3,1,0]
+#citations=[10,8,5,4,3]
+# citations=[25,8,5,3,3]
+citations=[9,7,6,2,1]
 
-                         
-#           elif nums[left]>nums[right]:
-#                print(f'elif before: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
-#                right+=1
-#                counter-=1
-#                print(f'elif after: counter {counter} and right is  {nums[right]},right index is {right} left is {nums[left]} left index {left} step {minimumStep}')
 
-# else:
-#      minimumStep=1
-          
-# print(minimumStep)
+b=sorted(citations)
+print(b)
+maximum=0
+minimum=0
+a=len(citations)
+
+for i in b:
+    if i>=maximum and i<=len(b):
+        maximum=i
+
+print(maximum)
+        
 
 
 
 
 
+# print(citations)
